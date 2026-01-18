@@ -1,11 +1,168 @@
+
 # Hi there, I'm Lesley  👋
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/amadin-o-8b1143192/))
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:oredialesley@gmail.com)
 
 ##  DevSecOps Engineer🚀♾️   | Cloud Security Specialist🔐 | Cybersecurtiy Engineer (Blue Team🔵) 
 
-I'm passionate about building scalable, reliable cloud infrastructure and automating everything. Currently focused on AWS, Terraform, and Kubernetes.
+I'm passionate about building secure pipelines, shifting security left, and embedding compliance into every stage of the SDLC through Infrastructure as Code and DevSecOps practices.
+
+---
+
+### 🔧 What I Do
+
+- 🏗️ Design & deploy secure, scalable cloud infrastructure (AWS, Azure, GCP, OCI)
+- ♾️ Build CI/CD pipelines that ship code faster with fewer errors
+- 📈 Implement observability with Prometheus, Grafana, Splunk & Dynatrace
+- 🐳 Containerize and orchestrate workloads with Docker & Kubernetes
+- 🔐 Integrate security into every stage of the pipeline
+
+---
+
+### 🛠️ Tech Stack
+
+**Cloud Platforms**
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-%234285F4.svg?style=flat&logo=googlecloud&logoColor=white)
+![Oracle Cloud](https://img.shields.io/badge/Oracle_Cloud-%23F80000.svg?style=flat&logo=oracle&logoColor=white)
+
+**Infrastructure as Code**
+![Terraform](https://img.shields.io/badge/Terraform-%235835CC.svg?style=flat&logo=terraform&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-%23EE0000.svg?style=flat&logo=ansible&logoColor=white)
+![CloudFormation](https://img.shields.io/badge/CloudFormation-%23FF4F8B.svg?style=flat&logo=amazon-aws&logoColor=white)
+![ARM Templates](https://img.shields.io/badge/ARM_Templates-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)
+
+**CI/CD & Automation**
+![Jenkins](https://img.shields.io/badge/Jenkins-%232C5263.svg?style=flat&logo=jenkins&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-%232671E5.svg?style=flat&logo=githubactions&logoColor=white)
+![GitLab CI](https://img.shields.io/badge/GitLab_CI-%23FC6D26.svg?style=flat&logo=gitlab&logoColor=white)
+![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-%230078D7.svg?style=flat&logo=azuredevops&logoColor=white)
+
+**Containers & Orchestration**
+![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-%23326CE5.svg?style=flat&logo=kubernetes&logoColor=white)
+![EKS](https://img.shields.io/badge/EKS-%23FF9900.svg?style=flat&logo=amazon-eks&logoColor=white)
+![AKS](https://img.shields.io/badge/AKS-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)
+![GKE](https://img.shields.io/badge/GKE-%234285F4.svg?style=flat&logo=googlecloud&logoColor=white)
+
+**Security & Scanning**
+![Snyk](https://img.shields.io/badge/Snyk-%234C4A73.svg?style=flat&logo=snyk&logoColor=white)
+![Trivy](https://img.shields.io/badge/Trivy-%231904DA.svg?style=flat&logo=aquasecurity&logoColor=white)
+![AWS KMS](https://img.shields.io/badge/AWS_KMS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
+![Azure Key Vault](https://img.shields.io/badge/Key_Vault-%230078D4.svg?style=flat&logo=microsoftazure&logoColor=white)
+
+**Monitoring & Observability**
+![Datadog](https://img.shields.io/badge/Datadog-%23632CA6.svg?style=flat&logo=datadog&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C.svg?style=flat&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-%23000000.svg?style=flat&logo=splunk&logoColor=white)
+![Dynatrace](https://img.shields.io/badge/Dynatrace-%231496FF.svg?style=flat&logo=dynatrace&logoColor=white)
+
+**Scripting & Languages**
+![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=flat&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?style=flat&logo=go&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-%234EAA25.svg?style=flat&logo=gnubash&logoColor=white)
+
+**Compliance Frameworks**
+![HIPAA](https://img.shields.io/badge/HIPAA-%23000000.svg?style=flat&logoColor=white)
+![HITRUST](https://img.shields.io/badge/HITRUST-%230066CC.svg?style=flat&logoColor=white)
+![SOC 2](https://img.shields.io/badge/SOC_2-%23000000.svg?style=flat&logoColor=white)
+![NIST 800-53](https://img.shields.io/badge/NIST_800--53-%23000000.svg?style=flat&logoColor=white)
+
+**Operating Systems**
+![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=flat&logo=linux&logoColor=black)
+![Red Hat](https://img.shields.io/badge/Red_Hat-%23EE0000.svg?style=flat&logo=redhat&logoColor=white)
+![Windows Server](https://img.shields.io/badge/Windows_Server-%230078D6.svg?style=flat&logo=windows&logoColor=white)
+![kali linux](https://img.shields.io/badge/Kali_Linux-%23557C94.svg?style=flat&logo=kalilinux&logoColor=white)
+---
+
+### 📜 Certifications
+
+- 🏅 AWS Solutions Architect
+- 🏅 AWS DevOps Engineer
+- 🏅 HashiCorp Terraform Associate
+- 🏅 CompTIA Security+
+- 🏅 CompTIA Secure Infrastructure Specialist
+- 🏅 Red Hat Certified System Administrator (RHCSA)
+
+---
+
+### 🚀 Featured Projects
+
+| Project | Description | Tech |
+|---------|-------------|------|
+| [**RoboShop E-Commerce Platform**](https://github.com/lloredia/roboshop-terraform-aws) | Multi-tier microservices deployment on AWS with Terraform & Ansible | `Terraform` `AWS` `Ansible` `EC2` `Route53` |
+| [**Compliance-as-Code Framework**](https://github.com/lloredia/Compliance-as-Code-Framework) | Automated CIS AWS Foundations Benchmark compliance using IaC | `Terraform` `GitHub Actions` `AWS` `Security` |
+| [**Serverless Health Check API**](https://github.com/lloredia/serverless-health-check) | Multi-environment serverless API with CI/CD pipeline | `Lambda` `API Gateway` `DynamoDB` `Terraform` |
+
+---
+
+### 📊 GitHub Stats
+
+![GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lloredia&theme=tokyonight)
+![Top Languages](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lloredia&theme=tokyonight)
+
+---
+
+### 🤝 Let's Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amadin-o-8b1143192/)
+[![Email](https://img.shields.io/badge/Email-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+
+---
+
+*"Building scalable systems that power business growth."*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### 🔭 What I'm Working On
 
