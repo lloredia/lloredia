@@ -3,7 +3,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/amadin-o-8b1143192/))
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:oredialesley@gmail.com)
 
-##  DevOps Engineer🚀♾️  | 🩺 Site Reliability Engineering | Cloud Security Specialist🔐 | Cybersecurtiy Engineer (Blue Team🔵) 
+##  DevSecOps Engineer🚀♾️   | Cloud Security Specialist🔐 | Cybersecurtiy Engineer (Blue Team🔵) 
 
 I'm passionate about building scalable, reliable cloud infrastructure and automating everything. Currently focused on AWS, Terraform, and Kubernetes.
 
