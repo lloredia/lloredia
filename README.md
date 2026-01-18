@@ -3,7 +3,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/amadin-o-8b1143192/))
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:oredialesley@gmail.com)
 
-## 🚀 DevOps Engineer | Cloud Infrastructure Specialist
+##  DevOps Engineer🚀♾️  | 🩺 Site Reliability Engineering | Cloud Security Specialist🔐 | Cybersecurtiy Engineer (Blue Team🔵) 
 
 I'm passionate about building scalable, reliable cloud infrastructure and automating everything. Currently focused on AWS, Terraform, and Kubernetes.
 
@@ -43,10 +43,11 @@ I'm passionate about building scalable, reliable cloud infrastructure and automa
 ### 📊 GitHub Stats
 
 <div align="center">
-  
-![Lesley's GitHub stats](https://github-readme-stats.vercel.app/api?username=lloredia&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=lloredia&layout=compact&theme=tokyonight&hide_border=true)
+<!-- GitHub Profile Summary Cards (more reliable) -->
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lloredia&theme=tokyonight)
+![Top Languages](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lloredia&theme=tokyonight)
+![Commits by Language](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=lloredia&theme=tokyonight)
 
 </div>
 
