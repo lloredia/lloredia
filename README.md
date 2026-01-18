@@ -45,11 +45,24 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 ![AKS](https://img.shields.io/badge/AKS-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)
 ![GKE](https://img.shields.io/badge/GKE-%234285F4.svg?style=flat&logo=googlecloud&logoColor=white)
 
-**Security & Scanning**
+**Security & Zero Trust**
+![Zscaler](https://img.shields.io/badge/Zscaler-%230C4B8E.svg?style=flat&logo=zscaler&logoColor=white)
+![Palo Alto](https://img.shields.io/badge/Palo_Alto_Prisma-%23F04E23.svg?style=flat&logo=paloaltonetworks&logoColor=white)
+![Microsoft Defender](https://img.shields.io/badge/Microsoft_Defender-%230078D4.svg?style=flat&logo=microsoft&logoColor=white)
+![CrowdStrike](https://img.shields.io/badge/CrowdStrike-%23FF0000.svg?style=flat&logo=crowdstrike&logoColor=white)
 ![Snyk](https://img.shields.io/badge/Snyk-%234C4A73.svg?style=flat&logo=snyk&logoColor=white)
 ![Trivy](https://img.shields.io/badge/Trivy-%231904DA.svg?style=flat&logo=aquasecurity&logoColor=white)
+
+**SIEM & Threat Detection**
+![Splunk](https://img.shields.io/badge/Splunk-%23000000.svg?style=flat&logo=splunk&logoColor=white)
+![QRadar](https://img.shields.io/badge/QRadar-%23052FAD.svg?style=flat&logo=ibm&logoColor=white)
+![Elastic](https://img.shields.io/badge/Elastic_SIEM-%23005571.svg?style=flat&logo=elastic&logoColor=white)
+![Microsoft Sentinel](https://img.shields.io/badge/Microsoft_Sentinel-%230078D4.svg?style=flat&logo=microsoft&logoColor=white)
+
+**Identity & Secrets**
 ![AWS KMS](https://img.shields.io/badge/AWS_KMS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
 ![Azure Key Vault](https://img.shields.io/badge/Key_Vault-%230078D4.svg?style=flat&logo=microsoftazure&logoColor=white)
+![IAM](https://img.shields.io/badge/IAM-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
 
 **Monitoring & Observability**
 ![Datadog](https://img.shields.io/badge/Datadog-%23632CA6.svg?style=flat&logo=datadog&logoColor=white)
@@ -62,28 +75,67 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 ![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=flat&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?style=flat&logo=go&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-%234EAA25.svg?style=flat&logo=gnubash&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=flat&logo=powershell&logoColor=white)
 
-**Compliance Frameworks**
+**Compliance & Frameworks**
 ![HIPAA](https://img.shields.io/badge/HIPAA-%23000000.svg?style=flat&logoColor=white)
 ![HITRUST](https://img.shields.io/badge/HITRUST-%230066CC.svg?style=flat&logoColor=white)
 ![SOC 2](https://img.shields.io/badge/SOC_2-%23000000.svg?style=flat&logoColor=white)
-![NIST 800-53](https://img.shields.io/badge/NIST_800--53-%23000000.svg?style=flat&logoColor=white)
+![PCI-DSS](https://img.shields.io/badge/PCI--DSS-%23000000.svg?style=flat&logoColor=white)
+![NIST](https://img.shields.io/badge/NIST_800--53-%23000000.svg?style=flat&logoColor=white)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-%23E34F26.svg?style=flat&logoColor=white)
 
 **Operating Systems**
 ![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=flat&logo=linux&logoColor=black)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-%23557C94.svg?style=flat&logo=kalilinux&logoColor=white)
 ![Red Hat](https://img.shields.io/badge/Red_Hat-%23EE0000.svg?style=flat&logo=redhat&logoColor=white)
 ![Windows Server](https://img.shields.io/badge/Windows_Server-%230078D6.svg?style=flat&logo=windows&logoColor=white)
-![kali linux](https://img.shields.io/badge/Kali_Linux-%23557C94.svg?style=flat&logo=kalilinux&logoColor=white)
 ---
 
 ### 📜 Certifications
 
-- 🏅 AWS Solutions Architect
-- 🏅 AWS DevOps Engineer
-- 🏅 HashiCorp Terraform Associate
+**Security & Cloud**
+- 🏅 CISM – Certified Information Security Manager
+- 🏅 CEH – Certified Ethical Hacker
+- 🏅 CHFI – Computer Hacking Forensic Investigator
+- 🏅 GIAC GMON – Security Operations & Continuous Monitoring
+- 🏅 AWS Certified Security – Specialty
+- 🏅 AWS Certified Solutions Architect – Associate
+- 🏅 Microsoft Azure Security Engineer (AZ-500)
+- 🏅 Prisma Certified Cloud Security Engineer
+- 🏅 Zscaler Certified Cloud Professional (ZCCP-PA)
+
+**Infrastructure & Operations**
 - 🏅 CompTIA Security+
-- 🏅 CompTIA Secure Infrastructure Specialist
-- 🏅 Red Hat Certified System Administrator (RHCSA)
+- 🏅 CompTIA Network+
+- 🏅 ITIL v4 Foundation
+
+
+
+
+![In Progress](https://img.shields.io/badge/●_In_Progress-EAB308?style=flat)
+
+![CISM](https://img.shields.io/badge/CISM-Certified_Information_Security_Manager-EAB308?style=flat)
+![CEH](https://img.shields.io/badge/CEH-Certified_Ethical_Hacker-EAB308?style=flat)
+![CHFI](https://img.shields.io/badge/CHFI-Computer_Hacking_Forensic_Investigator-EAB308?style=flat)
+![GIAC GMON](https://img.shields.io/badge/GIAC_GMON-Security_Operations_&_Monitoring-EAB308?style=flat)
+![AWS Security](https://img.shields.io/badge/AWS-Security_Specialty-EAB308?style=flat)
+![AZ-500](https://img.shields.io/badge/AZ--500-Azure_Security_Engineer-EAB308?style=flat)
+![Prisma](https://img.shields.io/badge/Prisma-Cloud_Security_Engineer-EAB308?style=flat)
+![Zscaler](https://img.shields.io/badge/Zscaler-ZCCP--PA-EAB308?style=flat)
+
+
+![Active](https://img.shields.io/badge/●_Active-22C55E?style=flat)  
+
+![AWS SA](https://img.shields.io/badge/AWS-Solutions_Architect_Associate-22C55E?style=flat)
+![Security+](https://img.shields.io/badge/CompTIA-Security+-22C55E?style=flat)
+![Network+](https://img.shields.io/badge/CompTIA-Network+-22C55E?style=flat)
+![ITIL](https://img.shields.io/badge/ITIL-v4_Foundation-22C55E?style=flat)
+
+
+
+
+
 
 ---
 
