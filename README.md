@@ -1,7 +1,7 @@
-# Hi there, I'm Lesley Lloredia 👋
+# Hi there, I'm Lesley  👋
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:your.email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/amadin-o-8b1143192/))
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:oredialesley@gmail.com)
 
 ## 🚀 DevOps Engineer | Cloud Infrastructure Specialist
 
