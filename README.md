@@ -2,7 +2,7 @@
 # Hi there, I'm Lesley  👋
 
 
-##  DevSecOps Engineer🚀♾️   | Cloud Security Specialist🔐 | Cybersecurtiy Engineer (Blue Team🔵) 
+##  DevSecOps Engineer🚀♾️   | Cloud Security Specialist🔐 | Cybersecurtiy Engineer : Blue Team🔵
 
 I'm passionate about building secure pipelines, shifting security left, and embedding compliance into every stage of the SDLC through Infrastructure as Code and DevSecOps practices.
 
