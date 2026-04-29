@@ -337,21 +337,21 @@ ZCCP-PA   ▓▓▓░░░░░░░░░░░░░░░░░  15%   ·
 Production-grade microservices e-commerce platform deployed end-to-end on AWS using Infrastructure as Code.
 
 ```mermaid
-%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','secondaryColor':'#0F172A','tertiaryColor':'#1E293B','fontFamily':'Fira Code'}}}%%
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    U([🌐 User]):::edge -->|HTTPS| R53[Route53]:::dns
-    R53 --> WEB[Nginx / Web]:::svc
-    WEB --> CAT[Catalogue]:::svc
-    WEB --> CART[Cart]:::svc
-    WEB --> USR[User]:::svc
-    WEB --> SHIP[Shipping]:::svc
-    WEB --> PAY[Payment]:::svc
-    CAT --> MONGO[(MongoDB)]:::data
+    U(["🌐 User"]):::edge -->|HTTPS| R53["Route53 DNS"]:::dns
+    R53 --> WEB["Nginx Web"]:::svc
+    WEB --> CAT["Catalogue"]:::svc
+    WEB --> CART["Cart"]:::svc
+    WEB --> USR["User"]:::svc
+    WEB --> SHIP["Shipping"]:::svc
+    WEB --> PAY["Payment"]:::svc
+    CAT --> MONGO[("MongoDB")]:::data
     USR --> MONGO
-    CART --> REDIS[(Redis)]:::data
-    SHIP --> MYSQL[(MySQL)]:::data
-    PAY --> RMQ[[RabbitMQ]]:::queue
-    subgraph VPC[🔒 AWS VPC · Private subnets · SGs · NACLs]
+    CART --> REDIS[("Redis")]:::data
+    SHIP --> MYSQL[("MySQL")]:::data
+    PAY --> RMQ[["RabbitMQ"]]:::queue
+    subgraph VPC ["🔒 AWS VPC — Private subnets, SGs, NACLs"]
       WEB
       CAT
       CART
@@ -368,7 +368,6 @@ flowchart LR
     classDef svc fill:#22C55E,stroke:#4ADE80,color:#0F172A,stroke-width:1px
     classDef data fill:#F59E0B,stroke:#FBBF24,color:#0F172A
     classDef queue fill:#EC4899,stroke:#F472B6,color:#fff
-    style VPC fill:#0F172A,stroke:#7C3AED,stroke-dasharray: 5 5,color:#A78BFA
 ```
 
 **Key Points**
@@ -388,17 +387,17 @@ A modern, high-performance Threat Intelligence Platform for collecting, enrichin
 ```mermaid
 %%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    F1[🌐 OSINT Feeds]:::feed --> ING[Ingestion]:::core
-    F2[📡 Internal Telemetry]:::feed --> ING
-    F3[🍯 Honeypot Logs]:::feed --> ING
-    ING --> NORM{Normalize<br/>+ dedupe}:::logic
-    NORM --> DET[IOC Type Detection<br/>IP · Domain · URL · Hash]:::core
-    DET --> ENR[Enrichment Connectors]:::core
-    ENR --> ATTCK[🎯 MITRE ATT&CK Mapping]:::attack
-    ATTCK --> DB[(Threat Store)]:::data
-    DB --> API[REST API]:::core
-    API --> UI[🖥 React Analyst UI]:::ui
-    API --> SOC[SIEM / SOAR]:::soc
+    F1["🌐 OSINT Feeds"]:::feed --> ING["Ingestion"]:::core
+    F2["📡 Internal Telemetry"]:::feed --> ING
+    F3["🍯 Honeypot Logs"]:::feed --> ING
+    ING --> NORM{"Normalize<br/>+ dedupe"}:::logic
+    NORM --> DET["IOC Type Detection<br/>IP — Domain — URL — Hash"]:::core
+    DET --> ENR["Enrichment Connectors"]:::core
+    ENR --> ATTCK["🎯 MITRE ATT&amp;CK Mapping"]:::attack
+    ATTCK --> DB[("Threat Store")]:::data
+    DB --> API["REST API"]:::core
+    API --> UI["🖥 React Analyst UI"]:::ui
+    API --> SOC["SIEM / SOAR"]:::soc
     classDef feed fill:#0EA5E9,stroke:#38BDF8,color:#fff
     classDef core fill:#22C55E,stroke:#4ADE80,color:#0F172A
     classDef logic fill:#F59E0B,stroke:#FBBF24,color:#0F172A
@@ -425,13 +424,13 @@ A modular honeypot built in Rust to capture, log, and analyze malicious activity
 ```mermaid
 %%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    ATK[🎭 Attacker]:::red -->|SSH / HTTP / SMB| LURE[🍯 Decoy Services]:::lure
-    LURE --> CAP[📼 Session Capture<br/>cmds · payloads · creds]:::core
-    CAP --> LOG[📝 Structured Logs<br/>JSON · timestamps]:::core
-    LOG --> SIEM[(SIEM)]:::data
-    LOG --> TI[🎯 Threat Intel]:::core
-    TI --> RULES[⚖ Detection Rules]:::rules
-    RULES --> SOC[🔵 Blue Team]:::blue
+    ATK["🎭 Attacker"]:::red -->|"SSH / HTTP / SMB"| LURE["🍯 Decoy Services"]:::lure
+    LURE --> CAP["📼 Session Capture<br/>cmds — payloads — creds"]:::core
+    CAP --> LOG["📝 Structured Logs<br/>JSON — timestamps"]:::core
+    LOG --> SIEM[("SIEM")]:::data
+    LOG --> TI["🎯 Threat Intel"]:::core
+    TI --> RULES["⚖ Detection Rules"]:::rules
+    RULES --> SOC["🔵 Blue Team"]:::blue
     classDef red fill:#DC2626,stroke:#F87171,color:#fff,stroke-width:2px
     classDef lure fill:#F59E0B,stroke:#FBBF24,color:#0F172A
     classDef core fill:#22C55E,stroke:#4ADE80,color:#0F172A
@@ -462,14 +461,14 @@ sequenceDiagram
     participant TI as 🎯 Threat Intel
     participant EDR as 🛡 EDR
     participant Analyst as 👩‍💻 Analyst
-    SIEM->>+AutoSOC: 🚨 Alert (phishing / malware / lateral)
+    SIEM->>+AutoSOC: 🚨 Alert — phishing, malware, lateral
     AutoSOC->>+TI: Enrich IOCs
     TI-->>-AutoSOC: Reputation + ATT&CK TTPs
-    AutoSOC->>+EDR: Isolate host / kill process
+    AutoSOC->>+EDR: Isolate host, kill process
     EDR-->>-AutoSOC: ✓ Containment ack
     AutoSOC->>+Analyst: 📨 Case + evidence bundle
     Note over Analyst: human-in-the-loop
-    Analyst-->>-AutoSOC: Approve / escalate
+    Analyst-->>-AutoSOC: Approve or escalate
     AutoSOC-->>-SIEM: ✅ Close ticket + IOC feedback
 ```
 
@@ -490,18 +489,23 @@ Security compliance automation that bakes CIS AWS Foundations Benchmark controls
 ```mermaid
 %%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    DEV[👩‍💻 Pull Request]:::dev --> GHA[GitHub Actions]:::ci
-    GHA --> FMT[terraform fmt + validate]:::scan
-    GHA --> TFSEC[🔍 tfsec]:::scan
-    GHA --> CKV[🔍 checkov]:::scan
-    GHA --> POL[⚖ OPA policy]:::scan
-    FMT & TFSEC & CKV & POL --> GATE{All green?}:::gate
-    GATE -- ❌ deny --> BLOCK[🚫 Block merge]:::deny
-    GATE -- ✅ allow --> APPLY[terraform apply]:::apply
-    APPLY --> CT[CloudTrail]:::aws
-    APPLY --> CFG[AWS Config]:::aws
-    APPLY --> VPCFL[VPC Flow Logs]:::aws
-    CT & CFG & VPCFL --> EVID[(📚 Evidence Store)]:::data
+    DEV["👩‍💻 Pull Request"]:::dev --> GHA["GitHub Actions"]:::ci
+    GHA --> FMT["terraform fmt + validate"]:::scan
+    GHA --> TFSEC["🔍 tfsec"]:::scan
+    GHA --> CKV["🔍 checkov"]:::scan
+    GHA --> POL["⚖ OPA policy"]:::scan
+    FMT --> GATE{"All green?"}:::gate
+    TFSEC --> GATE
+    CKV --> GATE
+    POL --> GATE
+    GATE -- "❌ deny" --> BLOCK["🚫 Block merge"]:::deny
+    GATE -- "✅ allow" --> APPLY["terraform apply"]:::apply
+    APPLY --> CT["CloudTrail"]:::aws
+    APPLY --> CFG["AWS Config"]:::aws
+    APPLY --> VPCFL["VPC Flow Logs"]:::aws
+    CT --> EVID[("📚 Evidence Store")]:::data
+    CFG --> EVID
+    VPCFL --> EVID
     classDef dev fill:#0EA5E9,stroke:#38BDF8,color:#fff
     classDef ci fill:#7C3AED,stroke:#A78BFA,color:#fff
     classDef scan fill:#F59E0B,stroke:#FBBF24,color:#0F172A
@@ -526,6 +530,31 @@ flowchart LR
 #### ⚡ [Serverless Health Check API](https://github.com/lloredia/serverless-health-check)
 Multi-environment serverless API demonstrating a complete DevSecOps CI/CD pipeline on AWS.
 
+```mermaid
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
+flowchart LR
+    DEV["👩‍💻 Push / PR"]:::dev --> GHA["GitHub Actions"]:::ci
+    GHA --> TEST["🧪 Tests + tfsec + checkov"]:::scan
+    TEST --> TF["Terraform plan + apply"]:::ci
+    TF --> ENV{"Environment"}:::gate
+    ENV --> DEVENV["dev"]:::env
+    ENV --> STG["staging"]:::env
+    ENV --> PRD["prod"]:::env
+    DEVENV & STG & PRD --> APIGW["API Gateway"]:::aws
+    APIGW --> LAM["λ Lambda<br/>health check"]:::lambda
+    LAM --> DDB[("DynamoDB")]:::data
+    LAM --> CW["📊 CloudWatch<br/>metrics, logs, alarms"]:::obs
+    classDef dev fill:#0EA5E9,stroke:#38BDF8,color:#fff
+    classDef ci fill:#7C3AED,stroke:#A78BFA,color:#fff
+    classDef scan fill:#F59E0B,stroke:#FBBF24,color:#0F172A
+    classDef gate fill:#1E293B,stroke:#A78BFA,color:#A78BFA,stroke-width:2px
+    classDef env fill:#22C55E,stroke:#4ADE80,color:#0F172A
+    classDef aws fill:#FF9900,stroke:#FBBF24,color:#0F172A
+    classDef lambda fill:#FF9900,stroke:#FBBF24,color:#0F172A,stroke-width:2px
+    classDef data fill:#7C3AED,stroke:#A78BFA,color:#fff
+    classDef obs fill:#EC4899,stroke:#F472B6,color:#fff
+```
+
 **Key Points**
 - Fully serverless stack: Lambda + API Gateway + DynamoDB, provisioned with Terraform (HCL)
 - Multi-environment promotion (dev → staging → prod) gated by automated tests and security scans
@@ -540,6 +569,31 @@ Multi-environment serverless API demonstrating a complete DevSecOps CI/CD pipeli
 #### 💾 [PulseCheckpoint Runtime](https://github.com/lloredia/pulsecheckpoint-runtime)
 Production-grade distributed checkpoint runtime for ML training workloads.
 
+```mermaid
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
+flowchart LR
+    subgraph CLUSTER ["🖥 GPU Training Cluster"]
+      W1["Worker 0<br/>GPU"]:::worker
+      W2["Worker 1<br/>GPU"]:::worker
+      W3["Worker N<br/>GPU"]:::worker
+    end
+    W1 --> SHARD["⚙ Shard + Partition"]:::core
+    W2 --> SHARD
+    W3 --> SHARD
+    SHARD --> COORD["🧭 Coordinator<br/>barrier + versioning"]:::coord
+    COORD --> SNAP["📸 Snapshot Writer<br/>async + atomic"]:::core
+    SNAP --> S3[("Object Store<br/>S3 / GCS / local")]:::data
+    SNAP --> NFS[("Shared FS")]:::data
+    FAULT["💥 Failure"]:::fail -.->|trigger| RESTORE["♻ Restore Path"]:::core
+    S3 --> RESTORE
+    RESTORE --> W1
+    classDef worker fill:#22C55E,stroke:#4ADE80,color:#0F172A,stroke-width:1px
+    classDef core fill:#7C3AED,stroke:#A78BFA,color:#fff
+    classDef coord fill:#F59E0B,stroke:#FBBF24,color:#0F172A,stroke-width:2px
+    classDef data fill:#0EA5E9,stroke:#38BDF8,color:#fff
+    classDef fail fill:#DC2626,stroke:#F87171,color:#fff,stroke-width:2px
+```
+
 **Key Points**
 - Distributed checkpointing designed to minimize training restart cost on large GPU clusters
 - Pluggable storage backends and partitioned snapshot strategy
@@ -552,6 +606,29 @@ Production-grade distributed checkpoint runtime for ML training workloads.
 
 #### 📺 [LiveView — Real-Time Sports Tracker](https://github.com/lloredia/liveview)
 Production-ready real-time sports tracker for live scores, match timelines, and league standings.
+
+```mermaid
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
+flowchart LR
+    P1["⚽ Soccer Feed"]:::feed --> ING["🔄 Ingestion<br/>poll + stream"]:::core
+    P2["🏀 NBA Feed"]:::feed --> ING
+    P3["🏈 NFL Feed"]:::feed --> ING
+    P4["🎾 Tennis Feed"]:::feed --> ING
+    P5["🏒 NHL Feed"]:::feed --> ING
+    ING --> RL["⏱ Rate-limit + Backoff"]:::logic
+    RL --> NORM["🧹 Normalize + Dedupe"]:::core
+    NORM --> CACHE[("⚡ Cache")]:::data
+    NORM --> STORE[("📚 Match Store")]:::data
+    CACHE --> API["🌐 REST API"]:::core
+    STORE --> API
+    API --> WEB["🖥 Web Client"]:::ui
+    API --> MOB["📱 Mobile Client"]:::ui
+    classDef feed fill:#0EA5E9,stroke:#38BDF8,color:#fff
+    classDef core fill:#22C55E,stroke:#4ADE80,color:#0F172A
+    classDef logic fill:#F59E0B,stroke:#FBBF24,color:#0F172A
+    classDef data fill:#7C3AED,stroke:#A78BFA,color:#fff
+    classDef ui fill:#EC4899,stroke:#F472B6,color:#fff
+```
 
 **Key Points**
 - Multi-sport coverage across 20+ leagues and 5 sports
