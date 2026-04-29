@@ -296,23 +296,6 @@ $ keychain list --certs --verify
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-#### 🏆 Trophy Case
-
-| Cert | Issuer | Domain | Status | Year | Verify |
-|---|---|---|---|---|---|
-| ![AWS](https://img.shields.io/badge/AWS-SAA-FF9900?style=flat&logo=amazon-aws&logoColor=white) | Amazon | Cloud Architecture | 🟢 Active | 2023 | [credly →](https://www.credly.com/) |
-| ![Security+](https://img.shields.io/badge/CompTIA-Security%2B-C8202F?style=flat&logo=comptia&logoColor=white) | CompTIA | Security Foundations | 🟢 Active | 2020 | [credly →](https://www.credly.com/) |
-| ![Network+](https://img.shields.io/badge/CompTIA-Network%2B-C8202F?style=flat&logo=comptia&logoColor=white) | CompTIA | Networking | 🟢 Active | 2019 | [credly →](https://www.credly.com/) |
-| ![ITIL](https://img.shields.io/badge/ITIL-v4_Foundation-0072C6?style=flat&logo=axelos&logoColor=white) | AXELOS | Service Mgmt | 🟢 Active | 2021 | [credly →](https://www.credly.com/) |
-| ![CISM](https://img.shields.io/badge/ISACA-CISM-0033A0?style=flat&logo=isaca&logoColor=white) | ISACA | Governance | 🟡 In Progress | 2026 | — |
-| ![CEH](https://img.shields.io/badge/EC--Council-CEH-DC2626?style=flat) | EC-Council | Offensive | 🟡 In Progress | 2026 | — |
-| ![CHFI](https://img.shields.io/badge/EC--Council-CHFI-DC2626?style=flat) | EC-Council | Forensics | 🟡 In Progress | 2026 | — |
-| ![GMON](https://img.shields.io/badge/GIAC-GMON-005571?style=flat) | GIAC / SANS | Blue Team | 🟡 In Progress | 2026 | — |
-| ![AWS-SCS](https://img.shields.io/badge/AWS-Security_Specialty-FF9900?style=flat&logo=amazon-aws&logoColor=white) | Amazon | Cloud Security | 🟡 In Progress | 2026 | — |
-| ![AZ-500](https://img.shields.io/badge/Microsoft-AZ--500-0078D4?style=flat&logo=microsoft&logoColor=white) | Microsoft | Cloud Security | 🟡 In Progress | 2026 | — |
-| ![PCCSE](https://img.shields.io/badge/Palo_Alto-PCCSE-F04E23?style=flat&logo=paloaltonetworks&logoColor=white) | Palo Alto | Cloud Security | 🟡 In Progress | 2026 | — |
-| ![ZCCP-PA](https://img.shields.io/badge/Zscaler-ZCCP--PA-0C4B8E?style=flat&logo=zscaler&logoColor=white) | Zscaler | Zero Trust | 🟡 In Progress | 2026 | — |
-
 #### 📚 Currently Studying
 
 ```text
