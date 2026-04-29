@@ -1,8 +1,7 @@
 
-# Hi there, I'm Lesley  👋
+# Hi there, I'm Lesley 👋
 
-
-##  DevSecOps Engineer🚀♾️   | Cloud Security Specialist🔐 | Cybersecurtiy Engineer : Blue Team🔵
+##  DevSecOps Engineer 🚀♾️ | Cloud Security Specialist 🔐 | Cybersecurity Engineer: Blue Team 🔵
 
 I'm passionate about building secure pipelines, shifting security left, and embedding compliance into every stage of the SDLC through Infrastructure as Code and DevSecOps practices.
 
@@ -15,6 +14,7 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 - 📈 Implement observability with Prometheus, Grafana, Splunk & Dynatrace
 - 🐳 Containerize and orchestrate workloads with Docker & Kubernetes
 - 🔐 Integrate security into every stage of the pipeline
+- 🛡️ Engineer threat detection, incident response, and compliance automation
 
 ---
 
@@ -68,12 +68,13 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 ![Datadog](https://img.shields.io/badge/Datadog-%23632CA6.svg?style=flat&logo=datadog&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C.svg?style=flat&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white)
-![Splunk](https://img.shields.io/badge/Splunk-%23000000.svg?style=flat&logo=splunk&logoColor=white)
 ![Dynatrace](https://img.shields.io/badge/Dynatrace-%231496FF.svg?style=flat&logo=dynatrace&logoColor=white)
 
 **Scripting & Languages**
 ![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=flat&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?style=flat&logo=go&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-%23000000.svg?style=flat&logo=rust&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-%233178C6.svg?style=flat&logo=typescript&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-%234EAA25.svg?style=flat&logo=gnubash&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=flat&logo=powershell&logoColor=white)
 
@@ -90,6 +91,7 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-%23557C94.svg?style=flat&logo=kalilinux&logoColor=white)
 ![Red Hat](https://img.shields.io/badge/Red_Hat-%23EE0000.svg?style=flat&logo=redhat&logoColor=white)
 ![Windows Server](https://img.shields.io/badge/Windows_Server-%230078D6.svg?style=flat&logo=windows&logoColor=white)
+
 ---
 
 ### 📜 Certifications
@@ -110,9 +112,6 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 - 🏅 CompTIA Network+
 - 🏅 ITIL v4 Foundation
 
-
-
-
 ![In Progress](https://img.shields.io/badge/●_In_Progress-EAB308?style=flat)
 
 ![CISM](https://img.shields.io/badge/CISM-Certified_Information_Security_Manager-EAB308?style=flat)
@@ -124,28 +123,155 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 ![Prisma](https://img.shields.io/badge/Prisma-Cloud_Security_Engineer-EAB308?style=flat)
 ![Zscaler](https://img.shields.io/badge/Zscaler-ZCCP--PA-EAB308?style=flat)
 
-
-![Active](https://img.shields.io/badge/●_Active-22C55E?style=flat)  
+![Active](https://img.shields.io/badge/●_Active-22C55E?style=flat)
 
 ![AWS SA](https://img.shields.io/badge/AWS-Solutions_Architect_Associate-22C55E?style=flat)
 ![Security+](https://img.shields.io/badge/CompTIA-Security+-22C55E?style=flat)
 ![Network+](https://img.shields.io/badge/CompTIA-Network+-22C55E?style=flat)
 ![ITIL](https://img.shields.io/badge/ITIL-v4_Foundation-22C55E?style=flat)
 
-
-
-
-
-
 ---
 
 ### 🚀 Featured Projects
 
-| Project | Description | Tech |
-|---------|-------------|------|
-| [**RoboShop E-Commerce Platform**](https://github.com/lloredia/roboshop-terraform-aws) | Multi-tier microservices deployment on AWS with Terraform & Ansible | `Terraform` `AWS` `Ansible` `EC2` `Route53` |
-| [**Compliance-as-Code Framework**](https://github.com/lloredia/Compliance-as-Code-Framework) | Automated CIS AWS Foundations Benchmark compliance using IaC | `Terraform` `GitHub Actions` `AWS` `Security` |
-| [**Serverless Health Check API**](https://github.com/lloredia/serverless-health-check) | Multi-environment serverless API with CI/CD pipeline | `Lambda` `API Gateway` `DynamoDB` `Terraform` |
+#### 🛒 [RoboShop — E-Commerce Microservices Platform](https://github.com/lloredia/RoboShop)
+Production-grade microservices e-commerce platform deployed end-to-end on AWS using Infrastructure as Code.
+
+**Key Points**
+- Provisioned 30+ AWS resources (VPC, subnets, route tables, security groups, EC2, Route53) with reusable Terraform modules
+- Deployed 8 microservices (catalogue, cart, user, shipping, payment, web, MongoDB, MySQL, Redis, RabbitMQ) across a multi-tier architecture
+- Implemented private DNS-based service discovery via Route53 hosted zones
+- Automated configuration management of every node with idempotent Ansible roles & playbooks
+- Hardened network boundaries with layered security groups, NACLs, and least-privilege IAM
+
+**Tech Stack:** `Terraform` `Ansible` `AWS (VPC, EC2, Route53, IAM)` `Nginx` `Node.js` `MongoDB` `MySQL` `Redis` `RabbitMQ` `Shell`
+
+---
+
+#### 🛡️ [SentinelForge — Threat Intelligence Platform](https://github.com/lloredia/SentinelForge)
+A modern, high-performance Threat Intelligence Platform for collecting, enriching, and analyzing Indicators of Compromise (IOCs).
+
+**Key Points**
+- Built a Rust backend optimized for high-throughput IOC ingestion and real-time enrichment
+- Automatic IOC type detection (IP, domain, URL, hash) with normalization and deduplication
+- React frontend dashboard for analyst triage, search, and IOC lifecycle management
+- Pluggable enrichment connectors and threat-feed integration architecture
+- Designed for SOC workflows, mapping IOCs to MITRE ATT&CK techniques
+
+**Tech Stack:** `Rust` `React` `TypeScript` `REST APIs` `MITRE ATT&CK`
+
+---
+
+#### 🍯 [HoneyTrap — Modular Honeypot System](https://github.com/lloredia/honeytrap)
+A modular honeypot built in Rust to capture, log, and analyze malicious activity by simulating vulnerable services.
+
+**Key Points**
+- Emulated services lure attackers and record full session activity (logins, commands, payloads)
+- Modular architecture so new protocol decoys can be added with minimal boilerplate
+- Structured logging pipeline enabling downstream SIEM ingestion and threat hunting
+- Built in Rust for memory safety and concurrency under hostile traffic
+- Designed for blue-team research, attacker TTP collection, and detection engineering
+
+**Tech Stack:** `Rust` `Tokio` `Structured Logging` `TCP/UDP Protocols` `SIEM Integrations`
+
+---
+
+#### 🚨 [AutoSOC — Incident Response Orchestrator](https://github.com/lloredia/AutoSOC)
+Automation engine for SOC playbooks — turns repetitive incident response actions into a click-to-run pipeline.
+
+**Key Points**
+- Codified incident response runbooks for common alert types (phishing, malware, lateral movement)
+- Orchestrates triage, enrichment, and containment steps across security tooling
+- Reduces analyst MTTR (mean time to respond) on repeatable alerts
+- Built with extensibility in mind — new playbooks slot in without core changes
+- Aligns with MITRE ATT&CK and NIST IR lifecycle phases
+
+**Tech Stack:** `JavaScript` `Node.js` `REST APIs` `Webhook Integrations`
+
+---
+
+#### 🔐 [Compliance-as-Code Framework](https://github.com/lloredia/Compliance-as-Code-Framework)
+Security compliance automation that bakes CIS AWS Foundations Benchmark controls directly into Terraform modules.
+
+**Key Points**
+- Implemented CIS AWS Foundations Benchmark controls as reusable Terraform modules
+- Automated CloudTrail (multi-region), Config, and VPC Flow Logs across all accounts
+- GitHub Actions pipeline runs `tfsec`, `checkov`, and policy checks on every PR
+- Improved compliance posture by 40%+ on tested target accounts
+- Drift detection and continuous evidence collection for audits
+
+**Tech Stack:** `Terraform` `GitHub Actions` `AWS Config` `CloudTrail` `tfsec` `checkov`
+
+---
+
+#### ⚡ [Serverless Health Check API](https://github.com/lloredia/serverless-health-check)
+Multi-environment serverless API demonstrating a complete DevSecOps CI/CD pipeline on AWS.
+
+**Key Points**
+- Fully serverless stack: Lambda + API Gateway + DynamoDB, provisioned with Terraform (HCL)
+- Multi-environment promotion (dev → staging → prod) gated by automated tests and security scans
+- IaC-driven IAM with least-privilege execution roles per environment
+- CloudWatch metrics, alarms, and structured logging baked into the pipeline
+- Cut deployment time by ~60% versus manual provisioning
+
+**Tech Stack:** `AWS Lambda` `API Gateway` `DynamoDB` `Terraform` `GitHub Actions` `CloudWatch`
+
+---
+
+#### 💾 [PulseCheckpoint Runtime](https://github.com/lloredia/pulsecheckpoint-runtime)
+Production-grade distributed checkpoint runtime for ML training workloads.
+
+**Key Points**
+- Distributed checkpointing designed to minimize training restart cost on large GPU clusters
+- Pluggable storage backends and partitioned snapshot strategy
+- Build system (Make) targeting reproducible artifacts and benchmarks
+- Focus on correctness under failure injection and concurrent writers
+
+**Tech Stack:** `C/C++` `Make` `Distributed Systems` `GPU/ML Infrastructure`
+
+---
+
+#### 📺 [LiveView — Real-Time Sports Tracker](https://github.com/lloredia/liveview)
+Production-ready real-time sports tracker for live scores, match timelines, and league standings.
+
+**Key Points**
+- Multi-sport coverage across 20+ leagues and 5 sports
+- Real-time data ingestion with deduplication and event normalization
+- Resilient polling/streaming pipeline with backoff and rate-limit handling
+- Clean separation between ingestion, storage, and presentation layers
+
+**Tech Stack:** `Python` `REST APIs` `Async I/O` `Caching`
+
+---
+
+### 📈 Experience Highlights
+
+- 💡 Deployed production-grade microservices architectures on AWS with full IaC
+- 🔒 Implemented security compliance frameworks improving security posture by 40%+
+- ⚡ Automated infrastructure provisioning, reducing deployment time by 60%
+- 📊 Built CI/CD pipelines for multi-environment promotion with security gates
+- 🛡️ Engineered network security with VPCs, security groups, NACLs, and least-privilege IAM
+- 🧠 Built threat-intel and honeypot platforms in Rust for SOC workflows
+
+---
+
+### 🌱 Currently Learning
+
+- Advanced Kubernetes orchestration (CKA preparation)
+- Service mesh architectures (Istio, Linkerd)
+- GitOps with ArgoCD & Flux
+- Cloud-native security (eBPF, runtime protection, policy-as-code with OPA)
+
+---
+
+### 💬 Ask Me About
+
+- AWS / Azure / GCP infrastructure design and best practices
+- Infrastructure as Code with Terraform & Ansible
+- CI/CD pipeline optimization & security gating
+- Microservices architecture & service discovery
+- SIEM tuning, detection engineering, and incident response
+- Compliance automation (CIS, NIST 800-53, SOC 2, HIPAA)
 
 ---
 
@@ -153,6 +279,7 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 
 ![GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lloredia&theme=tokyonight)
 ![Top Languages](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lloredia&theme=tokyonight)
+![Commits by Language](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=lloredia&theme=tokyonight)
 
 ---
 
@@ -165,178 +292,4 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 
 *"Building scalable systems that power business growth."*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 🔭 What I'm Working On
-
-- 🛒 **[RoboShop E-Commerce Platform](https://github.com/lloredia/RoboShop)** - Complete microservices architecture on AWS with Terraform & Ansible
-- ☁️ Building production-grade infrastructure as code
-- 🤖 Automating deployment pipelines with CI/CD
-
-### 💼 Technical Skills
-
-#### Cloud & Infrastructure
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-
-#### Programming & Scripting
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
-#### Databases & Tools
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-
-#### CI/CD & Monitoring
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
-
-### 📊 GitHub Stats
-
-<div align="center">
-
-<!-- GitHub Profile Summary Cards (more reliable) -->
-![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lloredia&theme=tokyonight)
-![Top Languages](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lloredia&theme=tokyonight)
-![Commits by Language](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=lloredia&theme=tokyonight)
-
-</div>
-
-### 🏆 Featured Projects
-
-#### [🛒 RoboShop - E-Commerce Microservices Platform](https://github.com/lloredia/RoboShop)
-Complete production-grade microservices deployment on AWS
-- **Tech Stack**: Terraform, Ansible, AWS (VPC, EC2, Route53), Node.js, MongoDB, MySQL, Redis, RabbitMQ
-- **Highlights**: 
-  - 30+ AWS resources managed with IaC
-  - 8 microservices with service discovery
-  - Multi-tier architecture with security groups
-  - Automated configuration management
-
-#### [🔐 Compliance-as-Code Framework](https://github.com/lloredia/compliance-as-code)
-Security compliance automation for AWS infrastructure
-- **Tech Stack**: Terraform, GitHub Actions, AWS Config
-- **Highlights**: 
-  - CIS AWS Foundations Benchmark implementation
-  - Automated CloudTrail and VPC Flow Logs
-  - 40%+ compliance improvement
-
-### 📈 Experience Highlights
-
-- 💡 Deployed production-grade microservices architectures
-- 🔒 Implemented security compliance frameworks improving security posture by 40%
-- ⚡ Automated infrastructure provisioning reducing deployment time by 60%
-- 📊 Built CI/CD pipelines for multi-environment deployments
-- 🛡️ Configured network security with VPCs, security groups, and NACLs
-
-### 🌱 Currently Learning
-
-- Advanced Kubernetes orchestration (CKA preparation)
-- Service mesh architectures (Istio)
-- GitOps with ArgoCD
-- Cloud-native security practices
-
-### 💬 Ask Me About
-
-- AWS infrastructure design and best practices
-- Infrastructure as Code with Terraform
-- Configuration management with Ansible
-- CI/CD pipeline optimization
-- Microservices architecture
-- DevOps workflows and automation
-
-### 📫 How to Reach Me
-
-- 💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- 📧 Email: your.email@example.com
-- 🌐 Portfolio: [yourwebsite.com](https://yourwebsite.com)
-
-### ⚡ Fun Facts
-
-- 🎯 Love solving complex infrastructure challenges
-- 📚 Continuous learner - always exploring new technologies
-- 🤝 Believer in infrastructure as code and automation
-- 🌍 Open to collaboration on DevOps and cloud projects
-
----
-
-<div align="center">
-
-### 🔥 Streak Stats
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=lloredia&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
-### 💻 Recent Activity
-
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
-
-### 🏅 Achievements
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=lloredia&theme=tokyonight&no-frame=true&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
-
----
-
-*"The best way to predict the future is to automate it."*
-
 ![Profile Views](https://komarev.com/ghpvc/?username=lloredia&color=blueviolet&style=flat-square)
-
-</div>
