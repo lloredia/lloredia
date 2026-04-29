@@ -1,7 +1,41 @@
 
+```bash
+$ ssh lesley@github.com
+Last login: from 0xC0FFEE on a TTY near you
+Welcome to lloredia v4.7.1 (GNU/Linux 6.18.5 hardened-amd64)
+
+  * Documentation:  https://github.com/lloredia
+  * Posture:        zero-trust, least-privilege, default-deny
+  * MFA:            ✓ enforced
+  * Secrets:        0 plaintext, 0 hardcoded, 1 paranoid engineer
+
+$ sudo whoami
+lesley
+```
+
+```text
+       _._                            ───────────────────────────────────
+      /_|_\          lesley@cloud
+     /__|__\         ──────────────
+    /___|___\        OS............ DevSecOps (rolling release)
+   /____|____\       Kernel........ secure-by-default 6.18-hardened
+  /_____|_____\      Shell......... zsh + tmux + vim
+       |||           Uptime........ 8+ years in cloud & security
+      [DEV]          Roles......... DevSecOps · Cloud Security · Blue Team
+      [SEC]          Clouds........ AWS · Azure · GCP · OCI
+      [OPS]          IaC........... terraform · ansible · cloudformation
+       |||           Languages..... python · go · rust · typescript · bash
+       ===           Frameworks.... CIS · NIST 800-53 · SOC 2 · HIPAA · MITRE ATT&CK
+                     Certs......... CISM · CEH · CHFI · GMON · AWS-SCS · AZ-500
+                     Coffee........ ▓▓▓▓▓▓▓▓▓▓ 100%
+                     ───────────────────────────────────
+```
+
 # Hi there, I'm Lesley 👋
 
 ##  DevSecOps Engineer 🚀♾️ | Cloud Security Specialist 🔐 | Cybersecurity Engineer: Blue Team 🔵
+
+> `// TODO: ship secure code, automate the boring stuff, sleep at night`
 
 I'm passionate about building secure pipelines, shifting security left, and embedding compliance into every stage of the SDLC through Infrastructure as Code and DevSecOps practices.
 
@@ -137,6 +171,34 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 #### 🛒 [RoboShop — E-Commerce Microservices Platform](https://github.com/lloredia/RoboShop)
 Production-grade microservices e-commerce platform deployed end-to-end on AWS using Infrastructure as Code.
 
+```mermaid
+flowchart LR
+    U([🌐 User]) -->|HTTPS| R53[Route53]
+    R53 --> WEB[Nginx / Web]
+    WEB --> CAT[Catalogue]
+    WEB --> CART[Cart]
+    WEB --> USR[User]
+    WEB --> SHIP[Shipping]
+    WEB --> PAY[Payment]
+    CAT --> MONGO[(MongoDB)]
+    USR --> MONGO
+    CART --> REDIS[(Redis)]
+    SHIP --> MYSQL[(MySQL)]
+    PAY --> RMQ[[RabbitMQ]]
+    subgraph VPC[AWS VPC · Private subnets · SGs · NACLs]
+      WEB
+      CAT
+      CART
+      USR
+      SHIP
+      PAY
+      MONGO
+      REDIS
+      MYSQL
+      RMQ
+    end
+```
+
 **Key Points**
 - Provisioned 30+ AWS resources (VPC, subnets, route tables, security groups, EC2, Route53) with reusable Terraform modules
 - Deployed 8 microservices (catalogue, cart, user, shipping, payment, web, MongoDB, MySQL, Redis, RabbitMQ) across a multi-tier architecture
@@ -150,6 +212,21 @@ Production-grade microservices e-commerce platform deployed end-to-end on AWS us
 
 #### 🛡️ [SentinelForge — Threat Intelligence Platform](https://github.com/lloredia/SentinelForge)
 A modern, high-performance Threat Intelligence Platform for collecting, enriching, and analyzing Indicators of Compromise (IOCs).
+
+```mermaid
+flowchart LR
+    F1[OSINT Feeds] --> ING[Ingestion]
+    F2[Internal Telemetry] --> ING
+    F3[Honeypot Logs] --> ING
+    ING --> NORM{Normalize<br/>+ dedupe}
+    NORM --> DET[IOC Type Detection<br/>IP · Domain · URL · Hash]
+    DET --> ENR[Enrichment Connectors]
+    ENR --> ATTCK[MITRE ATT&CK Mapping]
+    ATTCK --> DB[(Threat Store)]
+    DB --> API[REST API]
+    API --> UI[React Analyst UI]
+    API --> SOC[SIEM / SOAR]
+```
 
 **Key Points**
 - Built a Rust backend optimized for high-throughput IOC ingestion and real-time enrichment
@@ -165,6 +242,17 @@ A modern, high-performance Threat Intelligence Platform for collecting, enrichin
 #### 🍯 [HoneyTrap — Modular Honeypot System](https://github.com/lloredia/honeytrap)
 A modular honeypot built in Rust to capture, log, and analyze malicious activity by simulating vulnerable services.
 
+```mermaid
+flowchart LR
+    ATK[🎭 Attacker] -->|SSH / HTTP / SMB| LURE[Decoy Services]
+    LURE --> CAP[Session Capture<br/>cmds · payloads · creds]
+    CAP --> LOG[Structured Logs<br/>JSON · timestamps]
+    LOG --> SIEM[(SIEM)]
+    LOG --> TI[Threat Intel]
+    TI --> RULES[Detection Rules]
+    RULES --> SOC[Blue Team]
+```
+
 **Key Points**
 - Emulated services lure attackers and record full session activity (logins, commands, payloads)
 - Modular architecture so new protocol decoys can be added with minimal boilerplate
@@ -179,6 +267,23 @@ A modular honeypot built in Rust to capture, log, and analyze malicious activity
 #### 🚨 [AutoSOC — Incident Response Orchestrator](https://github.com/lloredia/AutoSOC)
 Automation engine for SOC playbooks — turns repetitive incident response actions into a click-to-run pipeline.
 
+```mermaid
+sequenceDiagram
+    participant SIEM
+    participant AutoSOC
+    participant TI as Threat Intel
+    participant EDR
+    participant Analyst
+    SIEM->>AutoSOC: Alert (phishing / malware / lateral)
+    AutoSOC->>TI: Enrich IOCs
+    TI-->>AutoSOC: Reputation + ATT&CK TTPs
+    AutoSOC->>EDR: Isolate host / kill process
+    EDR-->>AutoSOC: Containment ack
+    AutoSOC->>Analyst: Case + evidence bundle
+    Analyst->>AutoSOC: Approve / escalate
+    AutoSOC->>SIEM: Close ticket + IOC feedback
+```
+
 **Key Points**
 - Codified incident response runbooks for common alert types (phishing, malware, lateral movement)
 - Orchestrates triage, enrichment, and containment steps across security tooling
@@ -192,6 +297,22 @@ Automation engine for SOC playbooks — turns repetitive incident response actio
 
 #### 🔐 [Compliance-as-Code Framework](https://github.com/lloredia/Compliance-as-Code-Framework)
 Security compliance automation that bakes CIS AWS Foundations Benchmark controls directly into Terraform modules.
+
+```mermaid
+flowchart LR
+    DEV[👩‍💻 Pull Request] --> GHA[GitHub Actions]
+    GHA --> FMT[terraform fmt + validate]
+    GHA --> TFSEC[tfsec]
+    GHA --> CKV[checkov]
+    GHA --> POL[OPA / policy checks]
+    FMT & TFSEC & CKV & POL --> GATE{All green?}
+    GATE -- ❌ --> BLOCK[Block merge]
+    GATE -- ✅ --> APPLY[terraform apply]
+    APPLY --> CT[CloudTrail]
+    APPLY --> CFG[AWS Config]
+    APPLY --> VPCFL[VPC Flow Logs]
+    CT & CFG & VPCFL --> EVID[(Evidence Store)]
+```
 
 **Key Points**
 - Implemented CIS AWS Foundations Benchmark controls as reusable Terraform modules
@@ -291,5 +412,19 @@ Production-ready real-time sports tracker for live scores, match timelines, and 
 ---
 
 *"Building scalable systems that power business growth."*
+
+```text
+$ exit
+logout
+Connection to lloredia closed.
+```
+
+<!--
+   ╔══════════════════════════════════════════════╗
+   ║  ↑ ↑ ↓ ↓ ← → ← → B A                         ║
+   ║  if you're reading the source, you found me. ║
+   ║  curl -sSL https://github.com/lloredia | sh  ║
+   ╚══════════════════════════════════════════════╝
+-->
 
 ![Profile Views](https://komarev.com/ghpvc/?username=lloredia&color=blueviolet&style=flat-square)
