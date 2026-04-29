@@ -99,57 +99,140 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 
 ### 🛠️ Tech Stack
 
-**Cloud Platforms**
+```bash
+$ cat ~/.toolbelt --proficiency --years
+```
+
+```text
+┌─────────────────────────── ⚡ daily drivers ───────────────────────────┐
+│                                                                        │
+│  terraform  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  expert    · 6y   · IaC               │
+│  aws        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  expert    · 7y   · cloud             │
+│  python     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░  advanced  · 7y   · automation        │
+│  kubernetes ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░  advanced  · 4y   · orchestration     │
+│  docker     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░  advanced  · 5y   · containers        │
+│  ansible    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░  advanced  · 5y   · config-mgmt       │
+│  github-act ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░  advanced  · 4y   · CI/CD             │
+│  splunk     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░  advanced  · 5y   · SIEM              │
+│  bash       ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  expert    · 7y   · glue              │
+│  go         ▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░  working   · 2y   · tooling           │
+│  rust       ▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░  working   · 1y   · sec-tooling       │
+│                                                                        │
+│  philosophy → boring tech · least privilege · default deny · IaC > UI  │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+```yaml
+# ~/.toolbelt.yml — last updated: 2026-04-29
+clouds:        [aws, azure, gcp, oci]
+iac:           [terraform, ansible, cloudformation, arm-templates]
+ci_cd:         [github-actions, gitlab-ci, jenkins, azure-devops]
+containers:    [docker, kubernetes, eks, aks, gke, helm]
+security:
+  zero_trust:  [zscaler, palo-alto-prisma, ms-defender, crowdstrike]
+  scanning:    [snyk, trivy, tfsec, checkov, semgrep, gitleaks]
+  policy:      [opa, sentinel, conftest]
+siem:          [splunk, qradar, elastic, microsoft-sentinel]
+identity:      [aws-iam, kms, azure-key-vault, vault]
+observability: [datadog, prometheus, grafana, dynatrace, loki, tempo]
+languages:     [python, go, rust, typescript, bash, powershell]
+compliance:    [cis, nist-800-53, soc2, hipaa, hitrust, pci-dss, mitre-attack]
+os:            [linux, kali, rhel, windows-server]
+```
+
+<details>
+<summary><b>☁️ Cloud Platforms</b> — multi-cloud, infrastructure-first</summary>
+
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-%234285F4.svg?style=flat&logo=googlecloud&logoColor=white)
 ![Oracle Cloud](https://img.shields.io/badge/Oracle_Cloud-%23F80000.svg?style=flat&logo=oracle&logoColor=white)
 
-**Infrastructure as Code**
+</details>
+
+<details>
+<summary><b>🏗️ Infrastructure as Code</b> — declarative, idempotent, peer-reviewed</summary>
+
 ![Terraform](https://img.shields.io/badge/Terraform-%235835CC.svg?style=flat&logo=terraform&logoColor=white)
 ![Ansible](https://img.shields.io/badge/Ansible-%23EE0000.svg?style=flat&logo=ansible&logoColor=white)
 ![CloudFormation](https://img.shields.io/badge/CloudFormation-%23FF4F8B.svg?style=flat&logo=amazon-aws&logoColor=white)
 ![ARM Templates](https://img.shields.io/badge/ARM_Templates-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)
 
-**CI/CD & Automation**
+</details>
+
+<details>
+<summary><b>♾️ CI/CD & Automation</b> — security-gated, multi-environment</summary>
+
 ![Jenkins](https://img.shields.io/badge/Jenkins-%232C5263.svg?style=flat&logo=jenkins&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-%232671E5.svg?style=flat&logo=githubactions&logoColor=white)
 ![GitLab CI](https://img.shields.io/badge/GitLab_CI-%23FC6D26.svg?style=flat&logo=gitlab&logoColor=white)
 ![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-%230078D7.svg?style=flat&logo=azuredevops&logoColor=white)
 
-**Containers & Orchestration**
+</details>
+
+<details>
+<summary><b>🐳 Containers & Orchestration</b> — managed K8s on every major cloud</summary>
+
 ![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=flat&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-%23326CE5.svg?style=flat&logo=kubernetes&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-%230F1689.svg?style=flat&logo=helm&logoColor=white)
 ![EKS](https://img.shields.io/badge/EKS-%23FF9900.svg?style=flat&logo=amazon-eks&logoColor=white)
 ![AKS](https://img.shields.io/badge/AKS-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)
 ![GKE](https://img.shields.io/badge/GKE-%234285F4.svg?style=flat&logo=googlecloud&logoColor=white)
 
-**Security & Zero Trust**
+</details>
+
+<details>
+<summary><b>🛡️ Security & Zero Trust</b> — defense in depth, shift-left scanners</summary>
+
 ![Zscaler](https://img.shields.io/badge/Zscaler-%230C4B8E.svg?style=flat&logo=zscaler&logoColor=white)
 ![Palo Alto](https://img.shields.io/badge/Palo_Alto_Prisma-%23F04E23.svg?style=flat&logo=paloaltonetworks&logoColor=white)
 ![Microsoft Defender](https://img.shields.io/badge/Microsoft_Defender-%230078D4.svg?style=flat&logo=microsoft&logoColor=white)
 ![CrowdStrike](https://img.shields.io/badge/CrowdStrike-%23FF0000.svg?style=flat&logo=crowdstrike&logoColor=white)
 ![Snyk](https://img.shields.io/badge/Snyk-%234C4A73.svg?style=flat&logo=snyk&logoColor=white)
 ![Trivy](https://img.shields.io/badge/Trivy-%231904DA.svg?style=flat&logo=aquasecurity&logoColor=white)
+![tfsec](https://img.shields.io/badge/tfsec-%2300ADD8.svg?style=flat&logo=hashicorp&logoColor=white)
+![Checkov](https://img.shields.io/badge/Checkov-%23000000.svg?style=flat&logoColor=white)
+![Semgrep](https://img.shields.io/badge/Semgrep-%231F2D3D.svg?style=flat&logoColor=white)
+![Gitleaks](https://img.shields.io/badge/Gitleaks-%23DC2626.svg?style=flat&logoColor=white)
 
-**SIEM & Threat Detection**
+</details>
+
+<details>
+<summary><b>🚨 SIEM & Threat Detection</b> — detection engineering & correlation</summary>
+
 ![Splunk](https://img.shields.io/badge/Splunk-%23000000.svg?style=flat&logo=splunk&logoColor=white)
 ![QRadar](https://img.shields.io/badge/QRadar-%23052FAD.svg?style=flat&logo=ibm&logoColor=white)
 ![Elastic](https://img.shields.io/badge/Elastic_SIEM-%23005571.svg?style=flat&logo=elastic&logoColor=white)
 ![Microsoft Sentinel](https://img.shields.io/badge/Microsoft_Sentinel-%230078D4.svg?style=flat&logo=microsoft&logoColor=white)
 
-**Identity & Secrets**
+</details>
+
+<details>
+<summary><b>🔑 Identity, Secrets & Policy</b> — least privilege by default</summary>
+
+![AWS IAM](https://img.shields.io/badge/AWS_IAM-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
 ![AWS KMS](https://img.shields.io/badge/AWS_KMS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
 ![Azure Key Vault](https://img.shields.io/badge/Key_Vault-%230078D4.svg?style=flat&logo=microsoftazure&logoColor=white)
-![IAM](https://img.shields.io/badge/IAM-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
+![Vault](https://img.shields.io/badge/HashiCorp_Vault-%23000000.svg?style=flat&logo=vault&logoColor=white)
+![OPA](https://img.shields.io/badge/OPA-%237B42BC.svg?style=flat&logo=openpolicyagent&logoColor=white)
 
-**Monitoring & Observability**
+</details>
+
+<details>
+<summary><b>📈 Monitoring & Observability</b> — metrics, logs, traces</summary>
+
 ![Datadog](https://img.shields.io/badge/Datadog-%23632CA6.svg?style=flat&logo=datadog&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C.svg?style=flat&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white)
+![Loki](https://img.shields.io/badge/Loki-%23F46800.svg?style=flat&logo=grafana&logoColor=white)
 ![Dynatrace](https://img.shields.io/badge/Dynatrace-%231496FF.svg?style=flat&logo=dynatrace&logoColor=white)
 
-**Scripting & Languages**
+</details>
+
+<details>
+<summary><b>💻 Languages</b> — pick the right tool for the job</summary>
+
 ![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=flat&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?style=flat&logo=go&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-%23000000.svg?style=flat&logo=rust&logoColor=white)
@@ -157,19 +240,30 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 ![Bash](https://img.shields.io/badge/Bash-%234EAA25.svg?style=flat&logo=gnubash&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=flat&logo=powershell&logoColor=white)
 
-**Compliance & Frameworks**
+</details>
+
+<details>
+<summary><b>📋 Compliance & Frameworks</b> — auditable by design</summary>
+
+![CIS](https://img.shields.io/badge/CIS_Benchmarks-%23000000.svg?style=flat&logoColor=white)
+![NIST](https://img.shields.io/badge/NIST_800--53-%23000000.svg?style=flat&logoColor=white)
+![SOC 2](https://img.shields.io/badge/SOC_2-%23000000.svg?style=flat&logoColor=white)
 ![HIPAA](https://img.shields.io/badge/HIPAA-%23000000.svg?style=flat&logoColor=white)
 ![HITRUST](https://img.shields.io/badge/HITRUST-%230066CC.svg?style=flat&logoColor=white)
-![SOC 2](https://img.shields.io/badge/SOC_2-%23000000.svg?style=flat&logoColor=white)
 ![PCI-DSS](https://img.shields.io/badge/PCI--DSS-%23000000.svg?style=flat&logoColor=white)
-![NIST](https://img.shields.io/badge/NIST_800--53-%23000000.svg?style=flat&logoColor=white)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-%23E34F26.svg?style=flat&logoColor=white)
 
-**Operating Systems**
+</details>
+
+<details>
+<summary><b>🐧 Operating Systems</b> — at home in the terminal</summary>
+
 ![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=flat&logo=linux&logoColor=black)
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-%23557C94.svg?style=flat&logo=kalilinux&logoColor=white)
 ![Red Hat](https://img.shields.io/badge/Red_Hat-%23EE0000.svg?style=flat&logo=redhat&logoColor=white)
 ![Windows Server](https://img.shields.io/badge/Windows_Server-%230078D6.svg?style=flat&logo=windows&logoColor=white)
+
+</details>
 
 ---
 
