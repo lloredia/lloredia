@@ -269,39 +269,99 @@ os:            [linux, kali, rhel, windows-server]
 
 ### 📜 Certifications
 
-**Security & Cloud**
-- 🏅 CISM – Certified Information Security Manager
-- 🏅 CEH – Certified Ethical Hacker
-- 🏅 CHFI – Computer Hacking Forensic Investigator
-- 🏅 GIAC GMON – Security Operations & Continuous Monitoring
-- 🏅 AWS Certified Security – Specialty
-- 🏅 AWS Certified Solutions Architect – Associate
-- 🏅 Microsoft Azure Security Engineer (AZ-500)
-- 🏅 Prisma Certified Cloud Security Engineer
-- 🏅 Zscaler Certified Cloud Professional (ZCCP-PA)
+```bash
+$ keychain list --certs --verify
+```
 
-**Infrastructure & Operations**
-- 🏅 CompTIA Security+
-- 🏅 CompTIA Network+
-- 🏅 ITIL v4 Foundation
+```text
+┌─────────────────────────── 🔐 ~/.credentials/ ──────────────────────────┐
+│                                                                         │
+│  ID            ISSUER          STATUS         DOMAIN          EXPIRES   │
+│  ───────────── ─────────────── ────────────── ─────────────── ────────  │
+│  AWS-SAA       Amazon          🟢 active      cloud           2027      │
+│  Security+     CompTIA         🟢 active      foundations     ∞ (CE)    │
+│  Network+      CompTIA         🟢 active      networking      ∞ (CE)    │
+│  ITIL v4       AXELOS          🟢 active      ops             ∞         │
+│  CISM          ISACA           🟡 studying    governance      Q3 2026   │
+│  CEH           EC-Council      🟡 studying    offensive       Q2 2026   │
+│  CHFI          EC-Council      🟡 studying    forensics       Q4 2026   │
+│  GMON          GIAC            🟡 studying    blue-team       Q4 2026   │
+│  AWS-SCS       Amazon          🟡 studying    cloud-sec       Q2 2026   │
+│  AZ-500        Microsoft       🟡 studying    cloud-sec       Q3 2026   │
+│  PCCSE         Palo Alto       🟡 studying    cloud-sec       Q3 2026   │
+│  ZCCP-PA       Zscaler         🟡 studying    zero-trust      Q4 2026   │
+│                                                                         │
+│  legend: 🟢 active   🟡 in-progress   🔴 expired   ∞ continuing-ed       │
+│  totals: 4 active · 8 in-progress · 0 expired · 12 lifetime              │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
-![In Progress](https://img.shields.io/badge/●_In_Progress-EAB308?style=flat)
+#### 🏆 Trophy Case
 
-![CISM](https://img.shields.io/badge/CISM-Certified_Information_Security_Manager-EAB308?style=flat)
-![CEH](https://img.shields.io/badge/CEH-Certified_Ethical_Hacker-EAB308?style=flat)
-![CHFI](https://img.shields.io/badge/CHFI-Computer_Hacking_Forensic_Investigator-EAB308?style=flat)
-![GIAC GMON](https://img.shields.io/badge/GIAC_GMON-Security_Operations_&_Monitoring-EAB308?style=flat)
-![AWS Security](https://img.shields.io/badge/AWS-Security_Specialty-EAB308?style=flat)
-![AZ-500](https://img.shields.io/badge/AZ--500-Azure_Security_Engineer-EAB308?style=flat)
-![Prisma](https://img.shields.io/badge/Prisma-Cloud_Security_Engineer-EAB308?style=flat)
-![Zscaler](https://img.shields.io/badge/Zscaler-ZCCP--PA-EAB308?style=flat)
+| Cert | Issuer | Domain | Status | Year | Verify |
+|---|---|---|---|---|---|
+| ![AWS](https://img.shields.io/badge/AWS-SAA-FF9900?style=flat&logo=amazon-aws&logoColor=white) | Amazon | Cloud Architecture | 🟢 Active | 2023 | [credly →](https://www.credly.com/) |
+| ![Security+](https://img.shields.io/badge/CompTIA-Security%2B-C8202F?style=flat&logo=comptia&logoColor=white) | CompTIA | Security Foundations | 🟢 Active | 2020 | [credly →](https://www.credly.com/) |
+| ![Network+](https://img.shields.io/badge/CompTIA-Network%2B-C8202F?style=flat&logo=comptia&logoColor=white) | CompTIA | Networking | 🟢 Active | 2019 | [credly →](https://www.credly.com/) |
+| ![ITIL](https://img.shields.io/badge/ITIL-v4_Foundation-0072C6?style=flat&logo=axelos&logoColor=white) | AXELOS | Service Mgmt | 🟢 Active | 2021 | [credly →](https://www.credly.com/) |
+| ![CISM](https://img.shields.io/badge/ISACA-CISM-0033A0?style=flat&logo=isaca&logoColor=white) | ISACA | Governance | 🟡 In Progress | 2026 | — |
+| ![CEH](https://img.shields.io/badge/EC--Council-CEH-DC2626?style=flat) | EC-Council | Offensive | 🟡 In Progress | 2026 | — |
+| ![CHFI](https://img.shields.io/badge/EC--Council-CHFI-DC2626?style=flat) | EC-Council | Forensics | 🟡 In Progress | 2026 | — |
+| ![GMON](https://img.shields.io/badge/GIAC-GMON-005571?style=flat) | GIAC / SANS | Blue Team | 🟡 In Progress | 2026 | — |
+| ![AWS-SCS](https://img.shields.io/badge/AWS-Security_Specialty-FF9900?style=flat&logo=amazon-aws&logoColor=white) | Amazon | Cloud Security | 🟡 In Progress | 2026 | — |
+| ![AZ-500](https://img.shields.io/badge/Microsoft-AZ--500-0078D4?style=flat&logo=microsoft&logoColor=white) | Microsoft | Cloud Security | 🟡 In Progress | 2026 | — |
+| ![PCCSE](https://img.shields.io/badge/Palo_Alto-PCCSE-F04E23?style=flat&logo=paloaltonetworks&logoColor=white) | Palo Alto | Cloud Security | 🟡 In Progress | 2026 | — |
+| ![ZCCP-PA](https://img.shields.io/badge/Zscaler-ZCCP--PA-0C4B8E?style=flat&logo=zscaler&logoColor=white) | Zscaler | Zero Trust | 🟡 In Progress | 2026 | — |
 
-![Active](https://img.shields.io/badge/●_Active-22C55E?style=flat)
+#### 📚 Currently Studying
 
-![AWS SA](https://img.shields.io/badge/AWS-Solutions_Architect_Associate-22C55E?style=flat)
-![Security+](https://img.shields.io/badge/CompTIA-Security+-22C55E?style=flat)
-![Network+](https://img.shields.io/badge/CompTIA-Network+-22C55E?style=flat)
-![ITIL](https://img.shields.io/badge/ITIL-v4_Foundation-22C55E?style=flat)
+```text
+CISM      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░  70%   · domain 4 of 4 · target Q3 2026
+CEH       ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░  80%   · iLabs + practice exam · target Q2 2026
+AWS-SCS   ▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░  60%   · KMS + GuardDuty deep-dive · target Q2 2026
+AZ-500    ▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░  50%   · Sentinel KQL + Defender · target Q3 2026
+GMON      ▓▓▓▓▓▓▓▓░░░░░░░░░░░░  40%   · index building · target Q4 2026
+CHFI      ▓▓▓▓▓▓░░░░░░░░░░░░░░  30%   · disk + memory forensics · target Q4 2026
+PCCSE     ▓▓▓▓▓░░░░░░░░░░░░░░░  25%   · Prisma Cloud labs · target Q3 2026
+ZCCP-PA   ▓▓▓░░░░░░░░░░░░░░░░░  15%   · ZIA + ZPA fundamentals · target Q4 2026
+```
+
+#### 🗺️ Coverage Matrix
+
+| Domain | Cloud | Network | IR / SOC | Forensics | GRC / Audit | Offensive | Zero Trust |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **AWS-SAA**       | ✅ | ✅ |    |    |    |    |    |
+| **AWS-SCS**       | ✅ | ✅ | ✅ |    | ✅ |    | ✅ |
+| **AZ-500**        | ✅ | ✅ | ✅ |    | ✅ |    | ✅ |
+| **CISM**          |    |    |    |    | ✅ |    |    |
+| **CEH**           |    | ✅ |    |    |    | ✅ |    |
+| **CHFI**          |    |    | ✅ | ✅ |    | ✅ |    |
+| **GMON**          |    |    | ✅ |    |    |    |    |
+| **PCCSE**         | ✅ |    |    |    | ✅ |    | ✅ |
+| **ZCCP-PA**       |    | ✅ |    |    |    |    | ✅ |
+| **Security+**     |    | ✅ | ✅ |    | ✅ |    |    |
+| **Network+**      |    | ✅ |    |    |    |    |    |
+| **ITIL v4**       |    |    |    |    | ✅ |    |    |
+
+#### 🧬 Certification Timeline
+
+```text
+ 2019      2020      2021       2022       2023        2024–2026 ───────────►
+  │         │         │          │          │              │
+  ●─────────●─────────●──────────·──────────●──────────────╋───────────────►
+  │         │         │                     │              │
+  Network+  Security+ ITIL v4               AWS-SAA        ┃
+                                                           ┣━ CISM        🟡
+                                                           ┣━ CEH         🟡
+                                                           ┣━ CHFI        🟡
+                                                           ┣━ GMON        🟡
+                                                           ┣━ AWS-SCS     🟡
+                                                           ┣━ AZ-500      🟡
+                                                           ┣━ PCCSE       🟡
+                                                           ┗━ ZCCP-PA     🟡
+
+  ── foundations ──── operations ──── cloud ──── specialization ───────────►
+```
 
 ---
 
