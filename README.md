@@ -1,4 +1,25 @@
 
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ANIMATED HEADER                                                 -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E293B,100:7C3AED&height=220&section=header&text=lesley%40lloredia&fontColor=ffffff&fontSize=60&fontAlignY=38&desc=DevSecOps%20%C2%B7%20Cloud%20Security%20%C2%B7%20Blue%20Team&descAlignY=60&descSize=18)
+
+<p align="center">
+  <a href="https://github.com/lloredia">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=720&lines=%24+sudo+whoami;DevSecOps+Engineer+%F0%9F%9A%80%E2%99%BE%EF%B8%8F;Cloud+Security+Specialist+%F0%9F%94%90;Blue+Team+%E2%80%94+Detection+%26+Response+%F0%9F%94%B5;%22Shift+left.+Automate.+Sleep+at+night.%22" alt="typing" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/posture-zero%20trust-7C3AED?style=for-the-badge&logo=lock&logoColor=white" />
+  <img src="https://img.shields.io/badge/policy-default%20deny-DC2626?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/mfa-enforced-22C55E?style=for-the-badge&logo=auth0&logoColor=white" />
+  <img src="https://img.shields.io/badge/secrets-0%20plaintext-0EA5E9?style=for-the-badge&logo=vault&logoColor=white" />
+</p>
+
+---
+
 ```bash
 $ ssh lesley@github.com
 Last login: from 0xC0FFEE on a TTY near you
@@ -14,30 +35,54 @@ lesley
 ```
 
 ```text
-       _._                            ───────────────────────────────────
-      /_|_\          lesley@cloud
-     /__|__\         ──────────────
-    /___|___\        OS............ DevSecOps (rolling release)
-   /____|____\       Kernel........ secure-by-default 6.18-hardened
-  /_____|_____\      Shell......... zsh + tmux + vim
-       |||           Uptime........ 7 years in cloud & security
-      [DEV]          Roles......... DevSecOps · Cloud Security · Blue Team
-      [SEC]          Clouds........ AWS · Azure · GCP · OCI
-      [OPS]          IaC........... terraform · ansible · cloudformation
-       |||           Languages..... python · go · rust · typescript · bash
-       ===           Frameworks.... CIS · NIST 800-53 · SOC 2 · HIPAA · MITRE ATT&CK
-                     Certs......... CISM · CEH · CHFI · GMON · AWS-SCS · AZ-500
-                     Coffee........ ▓▓▓▓▓▓▓▓▓▓ 100%
-                     ───────────────────────────────────
+ ██╗     ███████╗███████╗██╗     ███████╗██╗   ██╗
+ ██║     ██╔════╝██╔════╝██║     ██╔════╝╚██╗ ██╔╝
+ ██║     █████╗  ███████╗██║     █████╗   ╚████╔╝
+ ██║     ██╔══╝  ╚════██║██║     ██╔══╝    ╚██╔╝
+ ███████╗███████╗███████║███████╗███████╗   ██║
+ ╚══════╝╚══════╝╚══════╝╚══════╝╚══════╝   ╚═╝
+                          ╔════════════════════════════════════════════╗
+                          ║  lesley@cloud ~ %                          ║
+                          ╠════════════════════════════════════════════╣
+   ╭─◉─╮                  ║  OS........ DevSecOps (rolling release)    ║
+  ╱ DEV ╲                 ║  Kernel.... secure-by-default 6.18-hard    ║
+ │  SEC  │                ║  Shell..... zsh + tmux + vim               ║
+  ╲ OPS ╱                 ║  Uptime.... 7 years in cloud & security    ║
+   ╰─◉─╯                  ║  Roles..... DevSecOps · CloudSec · Blue    ║
+     │                    ║  Clouds.... AWS · Azure · GCP · OCI        ║
+   ╔═╧═╗                  ║  IaC....... terraform · ansible · cfn      ║
+   ║ λ ║                  ║  Langs..... python · go · rust · ts · bash ║
+   ╚═╤═╝                  ║  Frameworks CIS · NIST · SOC2 · HIPAA      ║
+     │                    ║  Certs..... CISM · CEH · CHFI · GMON       ║
+  ┌──┴──┐                 ║  Coffee.... ▓▓▓▓▓▓▓▓▓▓ 100%                ║
+  │ ░░░ │                 ║  Status.... 🟢 online · ☕ caffeinated      ║
+  └─────┘                 ╚════════════════════════════════════════════╝
 ```
-
-# Hi there, I'm Lesley 👋
-
-##  DevSecOps Engineer 🚀♾️ | Cloud Security Specialist 🔐 | Cybersecurity Engineer: Blue Team 🔵
 
 > `// TODO: ship secure code, automate the boring stuff, sleep at night`
 
 I'm passionate about building secure pipelines, shifting security left, and embedding compliance into every stage of the SDLC through Infrastructure as Code and DevSecOps practices.
+
+---
+
+### 📟 SOC Dashboard — Last 90 days
+
+```text
+┌────────────────────────────── lesley@SOC ──────────────────────────────┐
+│                                                                        │
+│   MTTR (P1)..............  12m   ▼ 38%   ████████████░░░░░░░░  good    │
+│   Deploy frequency.......  14/d  ▲ 22%   ████████████████░░░░  high    │
+│   Change failure rate....  3.1%  ▼ 11%   ███░░░░░░░░░░░░░░░░░  low     │
+│   Compliance drift.......  0     ──      ░░░░░░░░░░░░░░░░░░░░  clean   │
+│   Secrets in git.........  0     ──      ░░░░░░░░░░░░░░░░░░░░  clean   │
+│   Critical CVEs open.....  0     ▼ 100%  ░░░░░░░░░░░░░░░░░░░░  patched │
+│   Pipelines hardened.....  37    ▲       ████████████████████  100%    │
+│   IOCs ingested..........  1.2M  ▲       ████████████████████  feeding │
+│   Coffee consumed........  ∞     ▲       ████████████████████  nominal │
+│                                                                        │
+│   [ 🟢 OPERATIONAL ]   [ 🛡 DEFENSE: ARMED ]   [ 🤖 AUTOMATION: ON ]   │
+└────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -172,20 +217,21 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 Production-grade microservices e-commerce platform deployed end-to-end on AWS using Infrastructure as Code.
 
 ```mermaid
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','secondaryColor':'#0F172A','tertiaryColor':'#1E293B','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    U([🌐 User]) -->|HTTPS| R53[Route53]
-    R53 --> WEB[Nginx / Web]
-    WEB --> CAT[Catalogue]
-    WEB --> CART[Cart]
-    WEB --> USR[User]
-    WEB --> SHIP[Shipping]
-    WEB --> PAY[Payment]
-    CAT --> MONGO[(MongoDB)]
+    U([🌐 User]):::edge -->|HTTPS| R53[Route53]:::dns
+    R53 --> WEB[Nginx / Web]:::svc
+    WEB --> CAT[Catalogue]:::svc
+    WEB --> CART[Cart]:::svc
+    WEB --> USR[User]:::svc
+    WEB --> SHIP[Shipping]:::svc
+    WEB --> PAY[Payment]:::svc
+    CAT --> MONGO[(MongoDB)]:::data
     USR --> MONGO
-    CART --> REDIS[(Redis)]
-    SHIP --> MYSQL[(MySQL)]
-    PAY --> RMQ[[RabbitMQ]]
-    subgraph VPC[AWS VPC · Private subnets · SGs · NACLs]
+    CART --> REDIS[(Redis)]:::data
+    SHIP --> MYSQL[(MySQL)]:::data
+    PAY --> RMQ[[RabbitMQ]]:::queue
+    subgraph VPC[🔒 AWS VPC · Private subnets · SGs · NACLs]
       WEB
       CAT
       CART
@@ -197,6 +243,12 @@ flowchart LR
       MYSQL
       RMQ
     end
+    classDef edge fill:#0EA5E9,stroke:#38BDF8,color:#fff,stroke-width:2px
+    classDef dns fill:#7C3AED,stroke:#A78BFA,color:#fff
+    classDef svc fill:#22C55E,stroke:#4ADE80,color:#0F172A,stroke-width:1px
+    classDef data fill:#F59E0B,stroke:#FBBF24,color:#0F172A
+    classDef queue fill:#EC4899,stroke:#F472B6,color:#fff
+    style VPC fill:#0F172A,stroke:#7C3AED,stroke-dasharray: 5 5,color:#A78BFA
 ```
 
 **Key Points**
@@ -214,18 +266,26 @@ flowchart LR
 A modern, high-performance Threat Intelligence Platform for collecting, enriching, and analyzing Indicators of Compromise (IOCs).
 
 ```mermaid
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    F1[OSINT Feeds] --> ING[Ingestion]
-    F2[Internal Telemetry] --> ING
-    F3[Honeypot Logs] --> ING
-    ING --> NORM{Normalize<br/>+ dedupe}
-    NORM --> DET[IOC Type Detection<br/>IP · Domain · URL · Hash]
-    DET --> ENR[Enrichment Connectors]
-    ENR --> ATTCK[MITRE ATT&CK Mapping]
-    ATTCK --> DB[(Threat Store)]
-    DB --> API[REST API]
-    API --> UI[React Analyst UI]
-    API --> SOC[SIEM / SOAR]
+    F1[🌐 OSINT Feeds]:::feed --> ING[Ingestion]:::core
+    F2[📡 Internal Telemetry]:::feed --> ING
+    F3[🍯 Honeypot Logs]:::feed --> ING
+    ING --> NORM{Normalize<br/>+ dedupe}:::logic
+    NORM --> DET[IOC Type Detection<br/>IP · Domain · URL · Hash]:::core
+    DET --> ENR[Enrichment Connectors]:::core
+    ENR --> ATTCK[🎯 MITRE ATT&CK Mapping]:::attack
+    ATTCK --> DB[(Threat Store)]:::data
+    DB --> API[REST API]:::core
+    API --> UI[🖥 React Analyst UI]:::ui
+    API --> SOC[SIEM / SOAR]:::soc
+    classDef feed fill:#0EA5E9,stroke:#38BDF8,color:#fff
+    classDef core fill:#22C55E,stroke:#4ADE80,color:#0F172A
+    classDef logic fill:#F59E0B,stroke:#FBBF24,color:#0F172A
+    classDef data fill:#7C3AED,stroke:#A78BFA,color:#fff
+    classDef attack fill:#DC2626,stroke:#F87171,color:#fff,stroke-width:2px
+    classDef ui fill:#EC4899,stroke:#F472B6,color:#fff
+    classDef soc fill:#1E293B,stroke:#7C3AED,color:#A78BFA,stroke-width:2px
 ```
 
 **Key Points**
@@ -243,14 +303,21 @@ flowchart LR
 A modular honeypot built in Rust to capture, log, and analyze malicious activity by simulating vulnerable services.
 
 ```mermaid
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    ATK[🎭 Attacker] -->|SSH / HTTP / SMB| LURE[Decoy Services]
-    LURE --> CAP[Session Capture<br/>cmds · payloads · creds]
-    CAP --> LOG[Structured Logs<br/>JSON · timestamps]
-    LOG --> SIEM[(SIEM)]
-    LOG --> TI[Threat Intel]
-    TI --> RULES[Detection Rules]
-    RULES --> SOC[Blue Team]
+    ATK[🎭 Attacker]:::red -->|SSH / HTTP / SMB| LURE[🍯 Decoy Services]:::lure
+    LURE --> CAP[📼 Session Capture<br/>cmds · payloads · creds]:::core
+    CAP --> LOG[📝 Structured Logs<br/>JSON · timestamps]:::core
+    LOG --> SIEM[(SIEM)]:::data
+    LOG --> TI[🎯 Threat Intel]:::core
+    TI --> RULES[⚖ Detection Rules]:::rules
+    RULES --> SOC[🔵 Blue Team]:::blue
+    classDef red fill:#DC2626,stroke:#F87171,color:#fff,stroke-width:2px
+    classDef lure fill:#F59E0B,stroke:#FBBF24,color:#0F172A
+    classDef core fill:#22C55E,stroke:#4ADE80,color:#0F172A
+    classDef data fill:#7C3AED,stroke:#A78BFA,color:#fff
+    classDef rules fill:#EC4899,stroke:#F472B6,color:#fff
+    classDef blue fill:#0EA5E9,stroke:#38BDF8,color:#fff,stroke-width:2px
 ```
 
 **Key Points**
@@ -268,20 +335,22 @@ flowchart LR
 Automation engine for SOC playbooks — turns repetitive incident response actions into a click-to-run pipeline.
 
 ```mermaid
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','actorBkg':'#7C3AED','actorTextColor':'#fff','signalColor':'#A78BFA','signalTextColor':'#E2E8F0','noteBkgColor':'#F59E0B','noteTextColor':'#0F172A','fontFamily':'Fira Code'}}}%%
 sequenceDiagram
     participant SIEM
     participant AutoSOC
-    participant TI as Threat Intel
-    participant EDR
-    participant Analyst
-    SIEM->>AutoSOC: Alert (phishing / malware / lateral)
-    AutoSOC->>TI: Enrich IOCs
-    TI-->>AutoSOC: Reputation + ATT&CK TTPs
-    AutoSOC->>EDR: Isolate host / kill process
-    EDR-->>AutoSOC: Containment ack
-    AutoSOC->>Analyst: Case + evidence bundle
-    Analyst->>AutoSOC: Approve / escalate
-    AutoSOC->>SIEM: Close ticket + IOC feedback
+    participant TI as 🎯 Threat Intel
+    participant EDR as 🛡 EDR
+    participant Analyst as 👩‍💻 Analyst
+    SIEM->>+AutoSOC: 🚨 Alert (phishing / malware / lateral)
+    AutoSOC->>+TI: Enrich IOCs
+    TI-->>-AutoSOC: Reputation + ATT&CK TTPs
+    AutoSOC->>+EDR: Isolate host / kill process
+    EDR-->>-AutoSOC: ✓ Containment ack
+    AutoSOC->>+Analyst: 📨 Case + evidence bundle
+    Note over Analyst: human-in-the-loop
+    Analyst-->>-AutoSOC: Approve / escalate
+    AutoSOC-->>-SIEM: ✅ Close ticket + IOC feedback
 ```
 
 **Key Points**
@@ -299,19 +368,28 @@ sequenceDiagram
 Security compliance automation that bakes CIS AWS Foundations Benchmark controls directly into Terraform modules.
 
 ```mermaid
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    DEV[👩‍💻 Pull Request] --> GHA[GitHub Actions]
-    GHA --> FMT[terraform fmt + validate]
-    GHA --> TFSEC[tfsec]
-    GHA --> CKV[checkov]
-    GHA --> POL[OPA / policy checks]
-    FMT & TFSEC & CKV & POL --> GATE{All green?}
-    GATE -- ❌ --> BLOCK[Block merge]
-    GATE -- ✅ --> APPLY[terraform apply]
-    APPLY --> CT[CloudTrail]
-    APPLY --> CFG[AWS Config]
-    APPLY --> VPCFL[VPC Flow Logs]
-    CT & CFG & VPCFL --> EVID[(Evidence Store)]
+    DEV[👩‍💻 Pull Request]:::dev --> GHA[GitHub Actions]:::ci
+    GHA --> FMT[terraform fmt + validate]:::scan
+    GHA --> TFSEC[🔍 tfsec]:::scan
+    GHA --> CKV[🔍 checkov]:::scan
+    GHA --> POL[⚖ OPA policy]:::scan
+    FMT & TFSEC & CKV & POL --> GATE{All green?}:::gate
+    GATE -- ❌ deny --> BLOCK[🚫 Block merge]:::deny
+    GATE -- ✅ allow --> APPLY[terraform apply]:::apply
+    APPLY --> CT[CloudTrail]:::aws
+    APPLY --> CFG[AWS Config]:::aws
+    APPLY --> VPCFL[VPC Flow Logs]:::aws
+    CT & CFG & VPCFL --> EVID[(📚 Evidence Store)]:::data
+    classDef dev fill:#0EA5E9,stroke:#38BDF8,color:#fff
+    classDef ci fill:#7C3AED,stroke:#A78BFA,color:#fff
+    classDef scan fill:#F59E0B,stroke:#FBBF24,color:#0F172A
+    classDef gate fill:#1E293B,stroke:#A78BFA,color:#A78BFA,stroke-width:2px
+    classDef deny fill:#DC2626,stroke:#F87171,color:#fff
+    classDef apply fill:#22C55E,stroke:#4ADE80,color:#0F172A,stroke-width:2px
+    classDef aws fill:#FF9900,stroke:#FBBF24,color:#0F172A
+    classDef data fill:#7C3AED,stroke:#A78BFA,color:#fff
 ```
 
 **Key Points**
