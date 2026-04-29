@@ -20,7 +20,7 @@ lesley
     /___|___\        OS............ DevSecOps (rolling release)
    /____|____\       Kernel........ secure-by-default 6.18-hardened
   /_____|_____\      Shell......... zsh + tmux + vim
-       |||           Uptime........ 8+ years in cloud & security
+       |||           Uptime........ 7 years in cloud & security
       [DEV]          Roles......... DevSecOps · Cloud Security · Blue Team
       [SEC]          Clouds........ AWS · Azure · GCP · OCI
       [OPS]          IaC........... terraform · ansible · cloudformation
