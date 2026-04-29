@@ -309,23 +309,6 @@ PCCSE     ▓▓▓▓▓░░░░░░░░░░░░░░░  25%   ·
 ZCCP-PA   ▓▓▓░░░░░░░░░░░░░░░░░  15%   · ZIA + ZPA fundamentals · target Q4 2026
 ```
 
-#### 🗺️ Coverage Matrix
-
-| Domain | Cloud | Network | IR / SOC | Forensics | GRC / Audit | Offensive | Zero Trust |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **AWS-SAA**       | ✅ | ✅ |    |    |    |    |    |
-| **AWS-SCS**       | ✅ | ✅ | ✅ |    | ✅ |    | ✅ |
-| **AZ-500**        | ✅ | ✅ | ✅ |    | ✅ |    | ✅ |
-| **CISM**          |    |    |    |    | ✅ |    |    |
-| **CEH**           |    | ✅ |    |    |    | ✅ |    |
-| **CHFI**          |    |    | ✅ | ✅ |    | ✅ |    |
-| **GMON**          |    |    | ✅ |    |    |    |    |
-| **PCCSE**         | ✅ |    |    |    | ✅ |    | ✅ |
-| **ZCCP-PA**       |    | ✅ |    |    |    |    | ✅ |
-| **Security+**     |    | ✅ | ✅ |    | ✅ |    |    |
-| **Network+**      |    | ✅ |    |    |    |    |    |
-| **ITIL v4**       |    |    |    |    | ✅ |    |    |
-
 #### 🧬 Certification Timeline
 
 ```text
