@@ -97,6 +97,52 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 
 ---
 
+### 🚢 Apps I Ship
+
+> Five products in active rotation — fitness, sports, real estate, gaming, hospitality.
+
+<table align="center">
+  <tr>
+    <td align="center" width="20%">
+      <a href="https://github.com/lloredia/pro-gains">
+        <img src="assets/logos/pro-gains.png" width="96" height="96" alt="PRo Gains" /><br/>
+        <b>PRo Gains</b>
+      </a><br/>
+      <sub>iOS · live on App Store<br/>strength + running tracker</sub>
+    </td>
+    <td align="center" width="20%">
+      <a href="https://github.com/lloredia/liveview">
+        <img src="assets/logos/liveview.png" width="96" height="96" alt="LiveView" /><br/>
+        <b>LiveView</b>
+      </a><br/>
+      <sub>iOS + FastAPI<br/>real-time sports tracker</sub>
+    </td>
+    <td align="center" width="20%">
+      <a href="https://github.com/lloredia/RENTFLOW">
+        <img src="assets/logos/rentflow.svg" width="96" height="96" alt="RentFlow" /><br/>
+        <b>RentFlow</b>
+      </a><br/>
+      <sub>web + iOS · monorepo<br/>two-sided rental platform</sub>
+    </td>
+    <td align="center" width="20%">
+      <a href="https://github.com/lloredia/Gods-Of-The-Realms-War-of-Worlds">
+        <img src="assets/logos/gods-of-the-realms.jpg" width="96" height="96" alt="Gods Of The Realms" style="border-radius: 16px;" /><br/>
+        <b>Gods Of The Realms</b>
+      </a><br/>
+      <sub>web · Next.js 16<br/>mobile-style gacha RPG</sub>
+    </td>
+    <td align="center" width="20%">
+      <a href="https://github.com/lloredia/night-list">
+        <img src="assets/logos/night-list.svg" width="96" height="96" alt="Night List" /><br/>
+        <b>Night List</b>
+      </a><br/>
+      <sub>web + iOS<br/>nightlife booking platform</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
 ### 🛠️ Tech Stack
 
 ```bash
