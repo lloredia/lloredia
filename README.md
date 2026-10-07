@@ -74,42 +74,49 @@ I publish infrastructure labs, detection tooling, and small products. The notes 
 
 ### 🚢 Apps I Ship
 
-> Five products. Linked cards open a public page.
+> Six products. Linked cards open a public page.
 
 <table align="center">
   <tr>
-    <td align="center" width="20%">
+    <td align="center" width="16%">
       <a href="https://apps.apple.com/us/app/pro-gains/id6761289622">
         <img src="assets/logos/pro-gains.png" width="96" height="96" alt="PRo Gains" /><br/>
         <b>PRo Gains</b>
       </a><br/>
       <sub>iOS · App Store<br/>workout tracker</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="16%">
       <a href="https://www.liveview-tracker.com/">
         <img src="assets/logos/liveview.png" width="96" height="96" alt="LiveView" /><br/>
         <b>LiveView</b>
       </a><br/>
       <sub>live sports scores<br/>soccer, basketball, hockey, baseball</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="16%">
       <img src="assets/logos/rentflow.svg" width="96" height="96" alt="RentFlow" /><br/>
       <b>RentFlow</b><br/>
       <sub>rental product</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="16%">
       <a href="https://lloredia.github.io/Gods-Of-The-Realms-War-of-Worlds/">
         <img src="assets/logos/gods-of-the-realms.jpg" width="96" height="96" alt="Gods Of The Realms" style="border-radius: 16px;" /><br/>
         <b>Gods Of The Realms</b>
       </a><br/>
       <sub>playable in the browser<br/>Next.js gacha RPG</sub>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="16%">
       <a href="https://github.com/lloredia/night-list">
         <img src="assets/logos/night-list.svg" width="96" height="96" alt="Night List" /><br/>
         <b>Night List</b>
       </a><br/>
       <sub>React dashboard + SwiftUI<br/>sample data, not deployed</sub>
+    </td>
+    <td align="center" width="16%">
+      <a href="https://lesleads.com">
+        <img src="assets/logos/lesleads.svg" width="96" height="96" alt="LesLeads" /><br/>
+        <b>LesLeads</b>
+      </a><br/>
+      <sub>consulting firm · job applications<br/>client &amp; specialist dashboards at app.lesleads.com</sub>
     </td>
   </tr>
 </table>
