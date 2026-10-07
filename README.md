@@ -1,4 +1,3 @@
-
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!-- ANIMATED HEADER                                                 -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
@@ -12,25 +11,22 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/posture-zero%20trust-7C3AED?style=for-the-badge&logo=lock&logoColor=white" />
-  <img src="https://img.shields.io/badge/policy-default%20deny-DC2626?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/mfa-enforced-22C55E?style=for-the-badge&logo=auth0&logoColor=white" />
-  <img src="https://img.shields.io/badge/secrets-0%20plaintext-0EA5E9?style=for-the-badge&logo=vault&logoColor=white" />
+  <img src="https://img.shields.io/badge/DevOps-SRE-7C3AED?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/DevSecOps-cloud%20security-0EA5E9?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Blue%20Team-detection%20%26%20response-22C55E?style=for-the-badge" />
 </p>
 
 ---
 
 ```bash
 $ ssh lesley@github.com
-Last login: from 0xC0FFEE on a TTY near you
-Welcome to lloredia v4.7.1 (GNU/Linux 6.18.5 hardened-amd64)
+Welcome to lloredia
 
   * Documentation:  https://github.com/lloredia
-  * Posture:        zero-trust, least-privilege, default-deny
-  * MFA:            ✓ enforced
-  * Secrets:        0 plaintext, 0 hardcoded, 1 paranoid engineer
+  * Roles:          DevOps · SRE · DevSecOps
+  * Public code:    AWS labs, Rust security tools, teaching notes
 
-$ sudo whoami
+$ whoami
 lesley
 ```
 
@@ -44,99 +40,76 @@ lesley
                           ╔════════════════════════════════════════════╗
                           ║  lesley@cloud ~ %                          ║
                           ╠════════════════════════════════════════════╣
-   ╭─◉─╮                  ║  OS........ DevSecOps (rolling release)    ║
-  ╱ DEV ╲                 ║  Kernel.... secure-by-default 6.18-hard    ║
- │  SEC  │                ║  Shell..... zsh + tmux + vim               ║
-  ╲ OPS ╱                 ║  Uptime.... 7 years in cloud & security    ║
-   ╰─◉─╯                  ║  Roles..... DevSecOps · CloudSec · Blue    ║
-     │                    ║  Clouds.... AWS · Azure · GCP · OCI        ║
-   ╔═╧═╗                  ║  IaC....... terraform · ansible · cfn      ║
-   ║ λ ║                  ║  Langs..... python · go · rust · ts · bash ║
-   ╚═╤═╝                  ║  Frameworks CIS · NIST · SOC2 · HIPAA      ║
-     │                    ║  Certs..... CISM · CEH · CHFI · GMON       ║
-  ┌──┴──┐                 ║  Coffee.... ▓▓▓▓▓▓▓▓▓▓ 100%                ║
-  │ ░░░ │                 ║  Status.... 🟢 online · ☕ caffeinated      ║
+   ╭─◉─╮                  ║  Roles..... DevOps · SRE · DevSecOps       ║
+  ╱ DEV ╲                 ║  Focus..... IaC, detection, response       ║
+ │  SEC  │                ║  Clouds.... AWS · Azure · GCP · OCI        ║
+  ╲ OPS ╱                 ║  IaC....... terraform · ansible            ║
+   ╰─◉─╯                  ║  Langs..... python · rust · go · ts · bash ║
+     │                    ║  Labs...... CIS controls · NIST IR         ║
+   ╔═╧═╗                  ║  Certs..... SAA · Sec+ · Net+ · ITIL       ║
+   ║ λ ║                  ║  Studying.. CISM · CEH · SCS · AZ-500      ║
+   ╚═╤═╝                  ║  Also....... CHFI · GMON · PCCSE · ZCCP    ║
+     │                    ║  Coffee.... ready                          ║
+  ┌──┴──┐                 ║  Status.... open to roles                  ║
+  │ ░░░ │                 ║                                            ║
   └─────┘                 ╚════════════════════════════════════════════╝
 ```
 
 > `// TODO: ship secure code, automate the boring stuff, sleep at night`
 
-I'm passionate about building secure pipelines, shifting security left, and embedding compliance into every stage of the SDLC through Infrastructure as Code and DevSecOps practices.
-
----
-
-### 📟 SOC Dashboard — Last 90 days
-
-```text
-┌────────────────────────────── lesley@SOC ──────────────────────────────┐
-│                                                                        │
-│   MTTR (P1)..............  12m   ▼ 38%   ████████████░░░░░░░░  good    │
-│   Deploy frequency.......  14/d  ▲ 22%   ████████████████░░░░  high    │
-│   Change failure rate....  3.1%  ▼ 11%   ███░░░░░░░░░░░░░░░░░  low     │
-│   Compliance drift.......  0     ──      ░░░░░░░░░░░░░░░░░░░░  clean   │
-│   Secrets in git.........  0     ──      ░░░░░░░░░░░░░░░░░░░░  clean   │
-│   Critical CVEs open.....  0     ▼ 100%  ░░░░░░░░░░░░░░░░░░░░  patched │
-│   Pipelines hardened.....  37    ▲       ████████████████████  100%    │
-│   IOCs ingested..........  1.2M  ▲       ████████████████████  feeding │
-│   Coffee consumed........  ∞     ▲       ████████████████████  nominal │
-│                                                                        │
-│   [ 🟢 OPERATIONAL ]   [ 🛡 DEFENSE: ARMED ]   [ 🤖 AUTOMATION: ON ]   │
-└────────────────────────────────────────────────────────────────────────┘
-```
+I publish infrastructure labs, detection tooling, and small products. The notes under Featured Projects describe the public repositories as they are on the default branch.
 
 ---
 
 ### 🔧 What I Do
 
-- 🏗️ Design & deploy secure, scalable cloud infrastructure (AWS, Azure, GCP, OCI)
-- ♾️ Build CI/CD pipelines that ship code faster with fewer errors
-- 📈 Implement observability with Prometheus, Grafana, Splunk & Dynatrace
-- 🐳 Containerize and orchestrate workloads with Docker & Kubernetes
-- 🔐 Integrate security into every stage of the pipeline
-- 🛡️ Engineer threat detection, incident response, and compliance automation
+- 🏗️ Build AWS infrastructure with Terraform and Ansible
+- ♾️ Add CI that formats, lints, tests, and policy-checks before anything is applied
+- 🐳 Package lab services with Docker and Compose
+- 📈 Wire Prometheus and Grafana into local security and checkpoint stacks
+- 🔐 Keep lab secrets in SSM SecureString parameters and Ansible Vault, and scan git with gitleaks where the workflow does
+- 🛡️ Practice detection and response: honeypot logs, a GuardDuty isolation lab, and a local incident console
 
 ---
 
 ### 🚢 Apps I Ship
 
-> Five products in active rotation — fitness, sports, real estate, gaming, hospitality.
+> Five products. Linked cards open a public page.
 
 <table align="center">
   <tr>
     <td align="center" width="20%">
-      <a href="https://github.com/lloredia/pro-gains">
+      <a href="https://apps.apple.com/us/app/pro-gains/id6761289622">
         <img src="assets/logos/pro-gains.png" width="96" height="96" alt="PRo Gains" /><br/>
         <b>PRo Gains</b>
       </a><br/>
-      <sub>iOS · live on App Store<br/>strength + running tracker</sub>
+      <sub>iOS · App Store<br/>workout tracker</sub>
     </td>
     <td align="center" width="20%">
-      <a href="https://github.com/lloredia/liveview">
+      <a href="https://www.liveview-tracker.com/">
         <img src="assets/logos/liveview.png" width="96" height="96" alt="LiveView" /><br/>
         <b>LiveView</b>
       </a><br/>
-      <sub>iOS + FastAPI<br/>real-time sports tracker</sub>
+      <sub>live sports scores<br/>soccer, basketball, hockey, baseball</sub>
     </td>
     <td align="center" width="20%">
-      <a href="https://github.com/lloredia/RENTFLOW">
-        <img src="assets/logos/rentflow.svg" width="96" height="96" alt="RentFlow" /><br/>
-        <b>RentFlow</b>
-      </a><br/>
-      <sub>web + iOS · monorepo<br/>two-sided rental platform</sub>
+      <img src="assets/logos/rentflow.svg" width="96" height="96" alt="RentFlow" /><br/>
+      <b>RentFlow</b><br/>
+      <sub>rental product</sub>
     </td>
     <td align="center" width="20%">
-      <a href="https://github.com/lloredia/Gods-Of-The-Realms-War-of-Worlds">
+      <a href="https://lloredia.github.io/Gods-Of-The-Realms-War-of-Worlds/">
         <img src="assets/logos/gods-of-the-realms.jpg" width="96" height="96" alt="Gods Of The Realms" style="border-radius: 16px;" /><br/>
         <b>Gods Of The Realms</b>
       </a><br/>
-      <sub>web · Next.js 16<br/>mobile-style gacha RPG</sub>
+      <sub>playable in the browser<br/>Next.js gacha RPG</sub>
     </td>
     <td align="center" width="20%">
       <a href="https://github.com/lloredia/night-list">
         <img src="assets/logos/night-list.svg" width="96" height="96" alt="Night List" /><br/>
         <b>Night List</b>
       </a><br/>
-      <sub>web + iOS<br/>nightlife booking platform</sub>
+      <sub>React dashboard + SwiftUI<br/>sample data, not deployed</sub>
     </td>
   </tr>
 </table>
@@ -145,49 +118,27 @@ I'm passionate about building secure pipelines, shifting security left, and embe
 
 ### 🛠️ Tech Stack
 
-```bash
-$ cat ~/.toolbelt --proficiency --years
-```
-
-```text
-┌─────────────────────────── ⚡ daily drivers ───────────────────────────┐
-│                                                                        │
-│  terraform  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  expert    · 6y   · IaC               │
-│  aws        ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  expert    · 7y   · cloud             │
-│  python     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░  advanced  · 7y   · automation        │
-│  kubernetes ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░  advanced  · 4y   · orchestration     │
-│  docker     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░  advanced  · 5y   · containers        │
-│  ansible    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░  advanced  · 5y   · config-mgmt       │
-│  github-act ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░  advanced  · 4y   · CI/CD             │
-│  splunk     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░  advanced  · 5y   · SIEM              │
-│  bash       ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  expert    · 7y   · glue              │
-│  go         ▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░  working   · 2y   · tooling           │
-│  rust       ▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░  working   · 1y   · sec-tooling       │
-│                                                                        │
-│  philosophy → boring tech · least privilege · default deny · IaC > UI  │
-└────────────────────────────────────────────────────────────────────────┘
-```
-
 ```yaml
-# ~/.toolbelt.yml — last updated: 2026-04-29
+# toolkit — tools I work with
+# project sections below are limited to what each public repo contains
 clouds:        [aws, azure, gcp, oci]
 iac:           [terraform, ansible, cloudformation, arm-templates]
 ci_cd:         [github-actions, gitlab-ci, jenkins, azure-devops]
 containers:    [docker, kubernetes, eks, aks, gke, helm]
 security:
-  zero_trust:  [zscaler, palo-alto-prisma, ms-defender, crowdstrike]
+  platforms:   [zscaler, palo-alto-prisma, ms-defender, crowdstrike]
   scanning:    [snyk, trivy, tfsec, checkov, semgrep, gitleaks]
   policy:      [opa, sentinel, conftest]
 siem:          [splunk, qradar, elastic, microsoft-sentinel]
 identity:      [aws-iam, kms, azure-key-vault, vault]
 observability: [datadog, prometheus, grafana, dynatrace, loki, tempo]
 languages:     [python, go, rust, typescript, bash, powershell]
-compliance:    [cis, nist-800-53, soc2, hipaa, hitrust, pci-dss, mitre-attack]
+compliance:    [cis, nist, soc2, hipaa, hitrust, pci-dss, mitre-attack]
 os:            [linux, kali, rhel, windows-server]
 ```
 
 <details>
-<summary><b>☁️ Cloud Platforms</b> — multi-cloud, infrastructure-first</summary>
+<summary><b>☁️ Cloud Platforms</b></summary>
 
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white)
@@ -197,7 +148,7 @@ os:            [linux, kali, rhel, windows-server]
 </details>
 
 <details>
-<summary><b>🏗️ Infrastructure as Code</b> — declarative, idempotent, peer-reviewed</summary>
+<summary><b>🏗️ Infrastructure as Code</b></summary>
 
 ![Terraform](https://img.shields.io/badge/Terraform-%235835CC.svg?style=flat&logo=terraform&logoColor=white)
 ![Ansible](https://img.shields.io/badge/Ansible-%23EE0000.svg?style=flat&logo=ansible&logoColor=white)
@@ -207,7 +158,7 @@ os:            [linux, kali, rhel, windows-server]
 </details>
 
 <details>
-<summary><b>♾️ CI/CD & Automation</b> — security-gated, multi-environment</summary>
+<summary><b>♾️ CI/CD & Automation</b></summary>
 
 ![Jenkins](https://img.shields.io/badge/Jenkins-%232C5263.svg?style=flat&logo=jenkins&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-%232671E5.svg?style=flat&logo=githubactions&logoColor=white)
@@ -217,7 +168,7 @@ os:            [linux, kali, rhel, windows-server]
 </details>
 
 <details>
-<summary><b>🐳 Containers & Orchestration</b> — managed K8s on every major cloud</summary>
+<summary><b>🐳 Containers & Orchestration</b></summary>
 
 ![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=flat&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-%23326CE5.svg?style=flat&logo=kubernetes&logoColor=white)
@@ -229,7 +180,7 @@ os:            [linux, kali, rhel, windows-server]
 </details>
 
 <details>
-<summary><b>🛡️ Security & Zero Trust</b> — defense in depth, shift-left scanners</summary>
+<summary><b>🛡️ Security tooling</b></summary>
 
 ![Zscaler](https://img.shields.io/badge/Zscaler-%230C4B8E.svg?style=flat&logo=zscaler&logoColor=white)
 ![Palo Alto](https://img.shields.io/badge/Palo_Alto_Prisma-%23F04E23.svg?style=flat&logo=paloaltonetworks&logoColor=white)
@@ -245,7 +196,7 @@ os:            [linux, kali, rhel, windows-server]
 </details>
 
 <details>
-<summary><b>🚨 SIEM & Threat Detection</b> — detection engineering & correlation</summary>
+<summary><b>🚨 SIEM & Threat Detection</b></summary>
 
 ![Splunk](https://img.shields.io/badge/Splunk-%23000000.svg?style=flat&logo=splunk&logoColor=white)
 ![QRadar](https://img.shields.io/badge/QRadar-%23052FAD.svg?style=flat&logo=ibm&logoColor=white)
@@ -255,7 +206,7 @@ os:            [linux, kali, rhel, windows-server]
 </details>
 
 <details>
-<summary><b>🔑 Identity, Secrets & Policy</b> — least privilege by default</summary>
+<summary><b>🔑 Identity, Secrets & Policy</b></summary>
 
 ![AWS IAM](https://img.shields.io/badge/AWS_IAM-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
 ![AWS KMS](https://img.shields.io/badge/AWS_KMS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
@@ -266,7 +217,7 @@ os:            [linux, kali, rhel, windows-server]
 </details>
 
 <details>
-<summary><b>📈 Monitoring & Observability</b> — metrics, logs, traces</summary>
+<summary><b>📈 Monitoring & Observability</b></summary>
 
 ![Datadog](https://img.shields.io/badge/Datadog-%23632CA6.svg?style=flat&logo=datadog&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C.svg?style=flat&logo=prometheus&logoColor=white)
@@ -277,7 +228,7 @@ os:            [linux, kali, rhel, windows-server]
 </details>
 
 <details>
-<summary><b>💻 Languages</b> — pick the right tool for the job</summary>
+<summary><b>💻 Languages</b></summary>
 
 ![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=flat&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?style=flat&logo=go&logoColor=white)
@@ -289,10 +240,10 @@ os:            [linux, kali, rhel, windows-server]
 </details>
 
 <details>
-<summary><b>📋 Compliance & Frameworks</b> — auditable by design</summary>
+<summary><b>📋 Compliance & Frameworks</b></summary>
 
 ![CIS](https://img.shields.io/badge/CIS_Benchmarks-%23000000.svg?style=flat&logoColor=white)
-![NIST](https://img.shields.io/badge/NIST_800--53-%23000000.svg?style=flat&logoColor=white)
+![NIST](https://img.shields.io/badge/NIST-%23000000.svg?style=flat&logoColor=white)
 ![SOC 2](https://img.shields.io/badge/SOC_2-%23000000.svg?style=flat&logoColor=white)
 ![HIPAA](https://img.shields.io/badge/HIPAA-%23000000.svg?style=flat&logoColor=white)
 ![HITRUST](https://img.shields.io/badge/HITRUST-%230066CC.svg?style=flat&logoColor=white)
@@ -302,7 +253,7 @@ os:            [linux, kali, rhel, windows-server]
 </details>
 
 <details>
-<summary><b>🐧 Operating Systems</b> — at home in the terminal</summary>
+<summary><b>🐧 Operating Systems</b></summary>
 
 ![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=flat&logo=linux&logoColor=black)
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-%23557C94.svg?style=flat&logo=kalilinux&logoColor=white)
@@ -316,404 +267,331 @@ os:            [linux, kali, rhel, windows-server]
 ### 📜 Certifications
 
 ```bash
-$ keychain list --certs --verify
+$ keychain list --certs
 ```
 
 ```text
-┌─────────────────────────── 🔐 ~/.credentials/ ──────────────────────────┐
+┌─────────────────────────── 🔐 ~/.credentials/ ───────────────────────────┐
 │                                                                         │
-│  ID            ISSUER          STATUS         DOMAIN          EXPIRES   │
-│  ───────────── ─────────────── ────────────── ─────────────── ────────  │
-│  AWS-SAA       Amazon          🟢 active      cloud           2027      │
-│  Security+     CompTIA         🟢 active      foundations     ∞ (CE)    │
-│  Network+      CompTIA         🟢 active      networking      ∞ (CE)    │
-│  ITIL v4       AXELOS          🟢 active      ops             ∞         │
-│  CISM          ISACA           🟡 studying    governance      Q3 2026   │
-│  CEH           EC-Council      🟡 studying    offensive       Q2 2026   │
-│  CHFI          EC-Council      🟡 studying    forensics       Q4 2026   │
-│  GMON          GIAC            🟡 studying    blue-team       Q4 2026   │
-│  AWS-SCS       Amazon          🟡 studying    cloud-sec       Q2 2026   │
-│  AZ-500        Microsoft       🟡 studying    cloud-sec       Q3 2026   │
-│  PCCSE         Palo Alto       🟡 studying    cloud-sec       Q3 2026   │
-│  ZCCP-PA       Zscaler         🟡 studying    zero-trust      Q4 2026   │
+│  ID            ISSUER          STATUS              DOMAIN               │
+│  ───────────── ─────────────── ─────────────────── ───────────────────  │
+│  AWS-SAA       Amazon          Earned              cloud · exp. 2027    │
+│  Security+     CompTIA         Earned              foundations          │
+│  Network+      CompTIA         Earned              networking           │
+│  ITIL v4       AXELOS          Earned              operations           │
+│  CISM          ISACA           In progress         governance           │
+│  CEH           EC-Council      In progress         offensive            │
+│  CHFI          EC-Council      In progress         forensics · Q4 2026  │
+│  GMON          GIAC            In progress         blue team · Q4 2026  │
+│  AWS-SCS       Amazon          In progress         cloud security       │
+│  AZ-500        Microsoft       In progress         cloud security       │
+│  PCCSE         Palo Alto       In progress         cloud security       │
+│  ZCCP-PA       Zscaler         In progress         zero trust · Q4 2026 │
 │                                                                         │
-│  legend: 🟢 active   🟡 in-progress   🔴 expired   ∞ continuing-ed       │
-│  totals: 4 active · 8 in-progress · 0 expired · 12 lifetime              │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-#### 📚 Currently Studying
-
 ```text
-CISM      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░  70%   · domain 4 of 4 · target Q3 2026
-CEH       ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░  80%   · iLabs + practice exam · target Q2 2026
-AWS-SCS   ▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░  60%   · KMS + GuardDuty deep-dive · target Q2 2026
-AZ-500    ▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░  50%   · Sentinel KQL + Defender · target Q3 2026
-GMON      ▓▓▓▓▓▓▓▓░░░░░░░░░░░░  40%   · index building · target Q4 2026
-CHFI      ▓▓▓▓▓▓░░░░░░░░░░░░░░  30%   · disk + memory forensics · target Q4 2026
-PCCSE     ▓▓▓▓▓░░░░░░░░░░░░░░░  25%   · Prisma Cloud labs · target Q3 2026
-ZCCP-PA   ▓▓▓░░░░░░░░░░░░░░░░░  15%   · ZIA + ZPA fundamentals · target Q4 2026
-```
+ 2019       2020        2021        2024
+ Network+   Security+   ITIL v4     AWS-SAA
 
-#### 🧬 Certification Timeline
-
-```text
- 2019      2020      2021       2022       2023        2024–2026 ───────────►
-  │         │         │          │          │              │
-  ●─────────●─────────●──────────·──────────●──────────────╋───────────────►
-  │         │         │                     │              │
-  Network+  Security+ ITIL v4               AWS-SAA        ┃
-                                                           ┣━ CISM        🟡
-                                                           ┣━ CEH         🟡
-                                                           ┣━ CHFI        🟡
-                                                           ┣━ GMON        🟡
-                                                           ┣━ AWS-SCS     🟡
-                                                           ┣━ AZ-500      🟡
-                                                           ┣━ PCCSE       🟡
-                                                           ┗━ ZCCP-PA     🟡
-
-  ── foundations ──── operations ──── cloud ──── specialization ───────────►
+ In progress, no date:  CISM · CEH · AWS-SCS · AZ-500 · PCCSE
+ In progress, Q4 2026:  CHFI · GMON · ZCCP-PA
 ```
 
 ---
 
 ### 🚀 Featured Projects
 
-#### 🛒 [RoboShop — E-Commerce Microservices Platform](https://github.com/lloredia/RoboShop)
-Production-grade microservices e-commerce platform deployed end-to-end on AWS using Infrastructure as Code.
+Public repositories only. Descriptions match the code on the default branch.
+
+#### 🛒 [RoboShop — AWS microservices lab](https://github.com/lloredia/RoboShop)
+
+Terraform and Ansible lab for a multi-service shop on AWS. Applying it creates a VPC, **12 EC2 instances**, and **11** private Route53 A records. The GitHub repo description still says 8 instances; the Terraform does not.
 
 ```mermaid
 %%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    U(["🌐 User"]):::edge -->|HTTPS| R53["Route53 DNS"]:::dns
-    R53 --> WEB["Nginx Web"]:::svc
-    WEB --> CAT["Catalogue"]:::svc
-    WEB --> CART["Cart"]:::svc
-    WEB --> USR["User"]:::svc
-    WEB --> SHIP["Shipping"]:::svc
-    WEB --> PAY["Payment"]:::svc
-    CAT --> MONGO[("MongoDB")]:::data
+    U(["User"]) -->|via bastion| WEB["Nginx"]
+    WEB --> CAT["Catalogue · Node"]
+    WEB --> CART["Cart · Node"]
+    WEB --> USR["User · Node"]
+    WEB --> SHIP["Shipping · Java"]
+    WEB --> PAY["Payment · Python"]
+    PAY --> RMQ["RabbitMQ"]
+    RMQ --> DIS["Dispatch · Go"]
+    CAT --> MONGO[("MongoDB")]
     USR --> MONGO
-    CART --> REDIS[("Redis")]:::data
-    SHIP --> MYSQL[("MySQL")]:::data
-    PAY --> RMQ[["RabbitMQ"]]:::queue
-    subgraph VPC ["🔒 AWS VPC — Private subnets, SGs, NACLs"]
-      WEB
-      CAT
-      CART
-      USR
-      SHIP
-      PAY
-      MONGO
-      REDIS
-      MYSQL
-      RMQ
-    end
-    classDef edge fill:#0EA5E9,stroke:#38BDF8,color:#fff,stroke-width:2px
-    classDef dns fill:#7C3AED,stroke:#A78BFA,color:#fff
-    classDef svc fill:#22C55E,stroke:#4ADE80,color:#0F172A,stroke-width:1px
-    classDef data fill:#F59E0B,stroke:#FBBF24,color:#0F172A
-    classDef queue fill:#EC4899,stroke:#F472B6,color:#fff
+    USR --> REDIS[("Redis")]
+    CART --> REDIS
+    SHIP --> MYSQL[("MariaDB")]
 ```
 
-**Key Points**
-- Provisioned 30+ AWS resources (VPC, subnets, route tables, security groups, EC2, Route53) with reusable Terraform modules
-- Deployed 8 microservices (catalogue, cart, user, shipping, payment, web, MongoDB, MySQL, Redis, RabbitMQ) across a multi-tier architecture
-- Implemented private DNS-based service discovery via Route53 hosted zones
-- Automated configuration management of every node with idempotent Ansible roles & playbooks
-- Hardened network boundaries with layered security groups, NACLs, and least-privilege IAM
+**What the code does**
+- Instances: bastion, MongoDB, MariaDB (DNS name `mysql`), Redis, RabbitMQ, Nginx frontend, and Node.js catalogue, user, and cart, plus Java shipping, Python payment, and a Go dispatch worker
+- Private zone records for those 11 services. The bastion is not in the zone
+- SSM `SecureString` parameters (customer-managed KMS key) for generated passwords. Ansible secrets live in a gitignored Vault file (`group_vars/all/vault.yml`)
+- CI on the repo: `terraform fmt`, `terraform validate`, tflint, checkov, yamllint, and ansible-lint
 
-**Tech Stack:** `Terraform` `Ansible` `AWS (VPC, EC2, Route53, IAM)` `Nginx` `Node.js` `MongoDB` `MySQL` `Redis` `RabbitMQ` `Shell`
+**Tech:** `Terraform` `Ansible` `AWS VPC` `EC2` `Route53` `SSM` `KMS` `Nginx` `Node.js` `Java` `Python` `Go` `MongoDB` `MariaDB` `Redis` `RabbitMQ`
 
 ---
 
-#### 🛡️ [SentinelForge — Threat Intelligence Platform](https://github.com/lloredia/SentinelForge)
-A modern, high-performance Threat Intelligence Platform for collecting, enriching, and analyzing Indicators of Compromise (IOCs).
+#### 🛡️ [Compliance-as-Code Framework](https://github.com/lloredia/Compliance-as-Code-Framework)
+
+Single-account AWS Terraform modules aimed at CIS Foundations controls, plus policy checks that run in GitHub Actions. CI does not apply the stack.
 
 ```mermaid
 %%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    F1["🌐 OSINT Feeds"]:::feed --> ING["Ingestion"]:::core
-    F2["📡 Internal Telemetry"]:::feed --> ING
-    F3["🍯 Honeypot Logs"]:::feed --> ING
-    ING --> NORM{"Normalize<br/>+ dedupe"}:::logic
-    NORM --> DET["IOC Type Detection<br/>IP — Domain — URL — Hash"]:::core
-    DET --> ENR["Enrichment Connectors"]:::core
-    ENR --> ATTCK["🎯 MITRE ATT&amp;CK Mapping"]:::attack
-    ATTCK --> DB[("Threat Store")]:::data
-    DB --> API["REST API"]:::core
-    API --> UI["🖥 React Analyst UI"]:::ui
-    API --> SOC["SIEM / SOAR"]:::soc
-    classDef feed fill:#0EA5E9,stroke:#38BDF8,color:#fff
-    classDef core fill:#22C55E,stroke:#4ADE80,color:#0F172A
-    classDef logic fill:#F59E0B,stroke:#FBBF24,color:#0F172A
-    classDef data fill:#7C3AED,stroke:#A78BFA,color:#fff
-    classDef attack fill:#DC2626,stroke:#F87171,color:#fff,stroke-width:2px
-    classDef ui fill:#EC4899,stroke:#F472B6,color:#fff
-    classDef soc fill:#1E293B,stroke:#7C3AED,color:#A78BFA,stroke-width:2px
+    PR["Pull request"] --> GHA["GitHub Actions"]
+    GHA --> FMT["fmt + validate"]
+    GHA --> TL["tflint"]
+    GHA --> CK["checkov"]
+    GHA --> OPA["opa test + conftest"]
+    OPA --> STACK["Terraform modules"]
+    STACK --> CT["CloudTrail"]
+    STACK --> FL["VPC flow logs"]
+    STACK --> CFG["AWS Config"]
+    STACK --> AL["CloudWatch CIS alarms"]
 ```
 
-**Key Points**
-- Built a Rust backend optimized for high-throughput IOC ingestion and real-time enrichment
-- Automatic IOC type detection (IP, domain, URL, hash) with normalization and deduplication
-- React frontend dashboard for analyst triage, search, and IOC lifecycle management
-- Pluggable enrichment connectors and threat-feed integration architecture
-- Designed for SOC workflows, mapping IOCs to MITRE ATT&CK techniques
+**What the code does**
+- Multi-region CloudTrail with log-file validation, KMS, CloudWatch Logs, and an SNS topic
+- VPC flow logs, an IAM account password policy, account-level S3 Block Public Access, and encryption for buckets named in a variable
+- An AWS Config recorder, a CIS-aligned conformance pack, and Config rules for open SSH and common ports
+- CloudWatch metric filters and alarms for CIS 4.1–4.15
+- Rego rules reject plans that open SSH or RDP to the internet, disable S3 Block Public Access, or create a single-region CloudTrail without log-file validation
+- CI also runs ruff and pytest for `scripts/analyze-prowler.py`. tfsec is not in this workflow
 
-**Tech Stack:** `Rust` `React` `TypeScript` `REST APIs` `MITRE ATT&CK`
-
----
-
-#### 🍯 [HoneyTrap — Modular Honeypot System](https://github.com/lloredia/honeytrap)
-A modular honeypot built in Rust to capture, log, and analyze malicious activity by simulating vulnerable services.
-
-```mermaid
-%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
-flowchart LR
-    ATK["🎭 Attacker"]:::red -->|"SSH / HTTP / SMB"| LURE["🍯 Decoy Services"]:::lure
-    LURE --> CAP["📼 Session Capture<br/>cmds — payloads — creds"]:::core
-    CAP --> LOG["📝 Structured Logs<br/>JSON — timestamps"]:::core
-    LOG --> SIEM[("SIEM")]:::data
-    LOG --> TI["🎯 Threat Intel"]:::core
-    TI --> RULES["⚖ Detection Rules"]:::rules
-    RULES --> SOC["🔵 Blue Team"]:::blue
-    classDef red fill:#DC2626,stroke:#F87171,color:#fff,stroke-width:2px
-    classDef lure fill:#F59E0B,stroke:#FBBF24,color:#0F172A
-    classDef core fill:#22C55E,stroke:#4ADE80,color:#0F172A
-    classDef data fill:#7C3AED,stroke:#A78BFA,color:#fff
-    classDef rules fill:#EC4899,stroke:#F472B6,color:#fff
-    classDef blue fill:#0EA5E9,stroke:#38BDF8,color:#fff,stroke-width:2px
-```
-
-**Key Points**
-- Emulated services lure attackers and record full session activity (logins, commands, payloads)
-- Modular architecture so new protocol decoys can be added with minimal boilerplate
-- Structured logging pipeline enabling downstream SIEM ingestion and threat hunting
-- Built in Rust for memory safety and concurrency under hostile traffic
-- Designed for blue-team research, attacker TTP collection, and detection engineering
-
-**Tech Stack:** `Rust` `Tokio` `Structured Logging` `TCP/UDP Protocols` `SIEM Integrations`
-
----
-
-#### 🚨 [AutoSOC — Incident Response Orchestrator](https://github.com/lloredia/AutoSOC)
-Automation engine for SOC playbooks — turns repetitive incident response actions into a click-to-run pipeline.
-
-```mermaid
-%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','actorBkg':'#7C3AED','actorTextColor':'#fff','signalColor':'#A78BFA','signalTextColor':'#E2E8F0','noteBkgColor':'#F59E0B','noteTextColor':'#0F172A','fontFamily':'Fira Code'}}}%%
-sequenceDiagram
-    participant SIEM
-    participant AutoSOC
-    participant TI as 🎯 Threat Intel
-    participant EDR as 🛡 EDR
-    participant Analyst as 👩‍💻 Analyst
-    SIEM->>+AutoSOC: 🚨 Alert — phishing, malware, lateral
-    AutoSOC->>+TI: Enrich IOCs
-    TI-->>-AutoSOC: Reputation + ATT&CK TTPs
-    AutoSOC->>+EDR: Isolate host, kill process
-    EDR-->>-AutoSOC: ✓ Containment ack
-    AutoSOC->>+Analyst: 📨 Case + evidence bundle
-    Note over Analyst: human-in-the-loop
-    Analyst-->>-AutoSOC: Approve or escalate
-    AutoSOC-->>-SIEM: ✅ Close ticket + IOC feedback
-```
-
-**Key Points**
-- Codified incident response runbooks for common alert types (phishing, malware, lateral movement)
-- Orchestrates triage, enrichment, and containment steps across security tooling
-- Reduces analyst MTTR (mean time to respond) on repeatable alerts
-- Built with extensibility in mind — new playbooks slot in without core changes
-- Aligns with MITRE ATT&CK and NIST IR lifecycle phases
-
-**Tech Stack:** `JavaScript` `Node.js` `REST APIs` `Webhook Integrations`
-
----
-
-#### 🔐 [Compliance-as-Code Framework](https://github.com/lloredia/Compliance-as-Code-Framework)
-Security compliance automation that bakes CIS AWS Foundations Benchmark controls directly into Terraform modules.
-
-```mermaid
-%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
-flowchart LR
-    DEV["👩‍💻 Pull Request"]:::dev --> GHA["GitHub Actions"]:::ci
-    GHA --> FMT["terraform fmt + validate"]:::scan
-    GHA --> TFSEC["🔍 tfsec"]:::scan
-    GHA --> CKV["🔍 checkov"]:::scan
-    GHA --> POL["⚖ OPA policy"]:::scan
-    FMT --> GATE{"All green?"}:::gate
-    TFSEC --> GATE
-    CKV --> GATE
-    POL --> GATE
-    GATE -- "❌ deny" --> BLOCK["🚫 Block merge"]:::deny
-    GATE -- "✅ allow" --> APPLY["terraform apply"]:::apply
-    APPLY --> CT["CloudTrail"]:::aws
-    APPLY --> CFG["AWS Config"]:::aws
-    APPLY --> VPCFL["VPC Flow Logs"]:::aws
-    CT --> EVID[("📚 Evidence Store")]:::data
-    CFG --> EVID
-    VPCFL --> EVID
-    classDef dev fill:#0EA5E9,stroke:#38BDF8,color:#fff
-    classDef ci fill:#7C3AED,stroke:#A78BFA,color:#fff
-    classDef scan fill:#F59E0B,stroke:#FBBF24,color:#0F172A
-    classDef gate fill:#1E293B,stroke:#A78BFA,color:#A78BFA,stroke-width:2px
-    classDef deny fill:#DC2626,stroke:#F87171,color:#fff
-    classDef apply fill:#22C55E,stroke:#4ADE80,color:#0F172A,stroke-width:2px
-    classDef aws fill:#FF9900,stroke:#FBBF24,color:#0F172A
-    classDef data fill:#7C3AED,stroke:#A78BFA,color:#fff
-```
-
-**Key Points**
-- Implemented CIS AWS Foundations Benchmark controls as reusable Terraform modules
-- Automated CloudTrail (multi-region), Config, and VPC Flow Logs across all accounts
-- GitHub Actions pipeline runs `tfsec`, `checkov`, and policy checks on every PR
-- Improved compliance posture by 40%+ on tested target accounts
-- Drift detection and continuous evidence collection for audits
-
-**Tech Stack:** `Terraform` `GitHub Actions` `AWS Config` `CloudTrail` `tfsec` `checkov`
+**Tech:** `Terraform` `GitHub Actions` `AWS Config` `CloudTrail` `CloudWatch` `checkov` `tflint` `OPA` `conftest`
 
 ---
 
 #### ⚡ [Serverless Health Check API](https://github.com/lloredia/serverless-health-check)
-Multi-environment serverless API demonstrating a complete DevSecOps CI/CD pipeline on AWS.
+
+API Gateway HTTP API, a Python 3.11 Lambda, and DynamoDB, provisioned with Terraform. The repository is the pipeline. It does not publish a public production URL.
 
 ```mermaid
 %%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    DEV["👩‍💻 Push / PR"]:::dev --> GHA["GitHub Actions"]:::ci
-    GHA --> TEST["🧪 Tests + tfsec + checkov"]:::scan
-    TEST --> TF["Terraform plan + apply"]:::ci
-    TF --> ENV{"Environment"}:::gate
-    ENV --> DEVENV["dev"]:::env
-    ENV --> STG["staging"]:::env
-    ENV --> PRD["prod"]:::env
-    DEVENV & STG & PRD --> APIGW["API Gateway"]:::aws
-    APIGW --> LAM["λ Lambda<br/>health check"]:::lambda
-    LAM --> DDB[("DynamoDB")]:::data
-    LAM --> CW["📊 CloudWatch<br/>metrics, logs, alarms"]:::obs
-    classDef dev fill:#0EA5E9,stroke:#38BDF8,color:#fff
-    classDef ci fill:#7C3AED,stroke:#A78BFA,color:#fff
-    classDef scan fill:#F59E0B,stroke:#FBBF24,color:#0F172A
-    classDef gate fill:#1E293B,stroke:#A78BFA,color:#A78BFA,stroke-width:2px
-    classDef env fill:#22C55E,stroke:#4ADE80,color:#0F172A
-    classDef aws fill:#FF9900,stroke:#FBBF24,color:#0F172A
-    classDef lambda fill:#FF9900,stroke:#FBBF24,color:#0F172A,stroke-width:2px
-    classDef data fill:#7C3AED,stroke:#A78BFA,color:#fff
-    classDef obs fill:#EC4899,stroke:#F472B6,color:#fff
+    PR["Pull request"] --> CI["fmt, validate, tflint, checkov, pytest"]
+    PUSH["Push to main"] --> OIDC["GitHub OIDC"]
+    OIDC --> STG["staging environment"]
+    STG --> PRD["production environment"]
+    STG --> API["HTTP API"]
+    PRD --> API
+    API -->|GET /health open| LAM["Lambda"]
+    API -->|POST /health AWS_IAM| LAM
+    LAM --> DDB[("DynamoDB")]
 ```
 
-**Key Points**
-- Fully serverless stack: Lambda + API Gateway + DynamoDB, provisioned with Terraform (HCL)
-- Multi-environment promotion (dev → staging → prod) gated by automated tests and security scans
-- IaC-driven IAM with least-privilege execution roles per environment
-- CloudWatch metrics, alarms, and structured logging baked into the pipeline
-- Cut deployment time by ~60% versus manual provisioning
+**What the code does**
+- `GET /health` is unauthenticated and read-only. `POST /health` defaults to `AWS_IAM` (SigV4). JWT is an option; `NONE` would leave POST public
+- Staging and production are separate Terraform tfvars and GitHub environments. Production waits on the `production` environment. There is no dev stage in the deploy workflow
+- Deploy uses a GitHub OIDC role. Plan and apply are skipped until repository secrets for the role, state bucket, and lock table are set
+- Tests use pytest and moto. The coverage gate in `pyproject.toml` is **90%** (`--cov-fail-under=90`), including branch coverage
+- CI also runs ruff, pip-audit, and gitleaks, and checkov on `terraform/` and `bootstrap/`
 
-**Tech Stack:** `AWS Lambda` `API Gateway` `DynamoDB` `Terraform` `GitHub Actions` `CloudWatch`
+**Tech:** `API Gateway HTTP API` `Lambda` `Python 3.11` `DynamoDB` `Terraform` `GitHub Actions` `GitHub OIDC` `checkov` `moto`
+
+---
+
+#### 🔎 [SentinelForge — threat intelligence service](https://github.com/lloredia/SentinelForge)
+
+Rust (Axum, sqlx, PostgreSQL) API and a React (Vite) dashboard for storing and searching indicators. Enrichment covers GeoIP, DNS, WHOIS, VirusTotal, and AbuseIPDB. Feed collectors exist as libraries. `POST /api/v1/feeds/refresh` is authenticated and currently returns a stub; collection is not scheduled at startup.
+
+```mermaid
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
+flowchart LR
+    UI["React dashboard"] -->|X-API-Key| API["Axum API"]
+    API --> PG[("PostgreSQL")]
+    API --> ENR["GeoIP · DNS · WHOIS · VirusTotal · AbuseIPDB"]
+    COL["Collector URL check"] --> API
+```
+
+**What the code does**
+- IOC types include IP, CIDR, domain, URL, MD5/SHA1/SHA256, email, and CVE. Search is paginated `ILIKE` with wildcards escaped
+- Write routes require an API key (`X-API-Key` or `Authorization: Bearer`). Read auth is optional and off by default
+- CORS is an allowlist (`CORS_ALLOWED_ORIGINS`). A per-IP rate limit uses `governor`. Request body size and timeout limits are configured
+- Collector base URLs reject link-local and metadata addresses, and reject loopback, RFC1918, and CGNAT unless private hosts are explicitly allowed. Feed URLs can be checked against an allowlist
+- The API image is `gcr.io/distroless/cc-debian12:nonroot`. CI builds the API and UI images, fails Trivy on unfixed-ignored HIGH/CRITICAL findings, and runs gitleaks
+- Compose also starts Redis. The API does not talk to it
+
+**Tech:** `Rust` `Axum` `PostgreSQL` `React` `TypeScript` `Docker` `Trivy` `gitleaks`
+
+---
+
+#### 🍯 [HoneyTrap — SSH honeypot lab](https://github.com/lloredia/honeytrap)
+
+One Compose stack: a Rust SSH honeypot, a Rust collector, ClickHouse, Prometheus, and Grafana. The honeypot speaks SSH on port 2222. It accepts passwords and answers from an emulated shell. It does not spawn a real shell, and commands such as `wget` return canned errors.
+
+```mermaid
+%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
+flowchart LR
+    ATK["SSH client"] -->|TCP 2222| HP["Rust honeypot"]
+    HP --> LOG["JSONL events"]
+    LOG --> COL["Rust collector"]
+    COL --> CH[("ClickHouse")]
+    CH --> GF["Grafana"]
+    HP --> PR["Prometheus"]
+    COL --> PR
+```
+
+**What the code does**
+- Events recorded include connections, auth, and commands. A Python helper can push source addresses to a SentinelForge API. That push is optional and not part of Compose
+- Grafana, Prometheus, ClickHouse, and metrics ports bind to `127.0.0.1`. Port 2222 is published on all interfaces
+- Honeypot and collector images run non-root with a read-only root filesystem, capabilities dropped, and `no-new-privileges`
+- Sample events in the repo use documentation addresses from RFC 5737
+
+**Tech:** `Rust` `Tokio` `Docker Compose` `ClickHouse` `Prometheus` `Grafana`
 
 ---
 
 #### 💾 [PulseCheckpoint Runtime](https://github.com/lloredia/pulsecheckpoint-runtime)
-Production-grade distributed checkpoint runtime for ML training workloads.
+
+A single-process **Rust** gRPC service (`tonic`) that stores checkpoint bytes in S3-compatible storage (AWS S3, MinIO, or LocalStack). Worker, dataset, and checkpoint indexes stay in memory. Restarting the process forgets registrations even if the objects remain in the bucket. The gRPC listener does not terminate TLS.
 
 ```mermaid
 %%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    subgraph CLUSTER ["🖥 GPU Training Cluster"]
-      W1["Worker 0<br/>GPU"]:::worker
-      W2["Worker 1<br/>GPU"]:::worker
-      W3["Worker N<br/>GPU"]:::worker
-    end
-    W1 --> SHARD["⚙ Shard + Partition"]:::core
-    W2 --> SHARD
-    W3 --> SHARD
-    SHARD --> COORD["🧭 Coordinator<br/>barrier + versioning"]:::coord
-    COORD --> SNAP["📸 Snapshot Writer<br/>async + atomic"]:::core
-    SNAP --> S3[("Object Store<br/>S3 / GCS / local")]:::data
-    SNAP --> NFS[("Shared FS")]:::data
-    FAULT["💥 Failure"]:::fail -.->|trigger| RESTORE["♻ Restore Path"]:::core
-    S3 --> RESTORE
-    RESTORE --> W1
-    classDef worker fill:#22C55E,stroke:#4ADE80,color:#0F172A,stroke-width:1px
-    classDef core fill:#7C3AED,stroke:#A78BFA,color:#fff
-    classDef coord fill:#F59E0B,stroke:#FBBF24,color:#0F172A,stroke-width:2px
-    classDef data fill:#0EA5E9,stroke:#38BDF8,color:#fff
-    classDef fail fill:#DC2626,stroke:#F87171,color:#fff,stroke-width:2px
+    PY["Python example client"] -->|gRPC :50051| RT["pulse-runtime · Rust"]
+    RT -->|S3 API| S3[("S3 / MinIO / LocalStack")]
+    RT -->|/metrics| PROM["Prometheus"]
+    PROM --> GRAF["Grafana"]
 ```
 
-**Key Points**
-- Distributed checkpointing designed to minimize training restart cost on large GPU clusters
-- Pluggable storage backends and partitioned snapshot strategy
-- Build system (Make) targeting reproducible artifacts and benchmarks
-- Focus on correctness under failure injection and concurrent writers
+**What the code does**
+- Register, heartbeat, list, and deregister workers. Save, get, list, and delete checkpoints, including a client-streaming upload. SHA-256 is stored and checked on read
+- `PULSE_S3_ENDPOINT` points the AWS SDK at MinIO or LocalStack. Unset, it uses the regional AWS endpoint
+- The example client and generated stubs are Python. The runtime is Rust
+- The runtime image is distroless and runs as nonroot. `terraform/` is an unfinished dev sketch and is not planned or applied by CI
+- Unit tests cover in-memory and filesystem storage. CI starts MinIO for the S3 round trip
 
-**Tech Stack:** `C/C++` `Make` `Distributed Systems` `GPU/ML Infrastructure`
+**Tech:** `Rust` `tonic` `gRPC` `AWS SDK for S3` `MinIO` `Prometheus` `Grafana` `Python client`
 
 ---
 
-#### 📺 [LiveView — Real-Time Sports Tracker](https://github.com/lloredia/liveview)
-Production-ready real-time sports tracker for live scores, match timelines, and league standings.
+#### 🚨 [Incident Response Automation Lab](https://github.com/lloredia/Incident-Response-Automation-Lab)
+
+Terraform lab: GuardDuty findings match EventBridge rules, and Step Functions calls Python Lambda playbooks. Deploy it only in a sandbox. `enforce` mode can change real resources. `notify_only` records the action and leaves the resource alone.
 
 ```mermaid
 %%{init: {'theme':'dark','themeVariables':{'primaryColor':'#1E293B','primaryTextColor':'#E2E8F0','primaryBorderColor':'#7C3AED','lineColor':'#A78BFA','fontFamily':'Fira Code'}}}%%
 flowchart LR
-    P1["⚽ Soccer Feed"]:::feed --> ING["🔄 Ingestion<br/>poll + stream"]:::core
-    P2["🏀 NBA Feed"]:::feed --> ING
-    P3["🏈 NFL Feed"]:::feed --> ING
-    P4["🎾 Tennis Feed"]:::feed --> ING
-    P5["🏒 NHL Feed"]:::feed --> ING
-    ING --> RL["⏱ Rate-limit + Backoff"]:::logic
-    RL --> NORM["🧹 Normalize + Dedupe"]:::core
-    NORM --> CACHE[("⚡ Cache")]:::data
-    NORM --> STORE[("📚 Match Store")]:::data
-    CACHE --> API["🌐 REST API"]:::core
-    STORE --> API
-    API --> WEB["🖥 Web Client"]:::ui
-    API --> MOB["📱 Mobile Client"]:::ui
-    classDef feed fill:#0EA5E9,stroke:#38BDF8,color:#fff
-    classDef core fill:#22C55E,stroke:#4ADE80,color:#0F172A
-    classDef logic fill:#F59E0B,stroke:#FBBF24,color:#0F172A
-    classDef data fill:#7C3AED,stroke:#A78BFA,color:#fff
-    classDef ui fill:#EC4899,stroke:#F472B6,color:#fff
+    GD["GuardDuty"] --> EB["EventBridge"]
+    EB --> SF["Step Functions"]
+    SF --> EC2["EC2 playbook"]
+    SF --> IAM["IAM playbook"]
+    SF --> S3["S3 playbook"]
+    EC2 --> SNS["SNS / optional Slack"]
+    EC2 --> EV[("Evidence bucket")]
 ```
 
-**Key Points**
-- Multi-sport coverage across 20+ leagues and 5 sports
-- Real-time data ingestion with deduplication and event normalization
-- Resilient polling/streaming pipeline with backoff and rate-limit handling
-- Clean separation between ingestion, storage, and presentation layers
+**What the code does**
+- EC2 findings: replace the instance security groups with a quarantine group, tag the instance, and snapshot attached EBS volumes
+- IAM findings: deactivate the access key and attach a pre-created deny-all policy
+- S3 findings: turn on all four S3 Block Public Access settings and tag the bucket
+- Unmatched types and playbook errors notify and write evidence, and do not contain
+- A forensics VPC is created with no internet gateway. Playbooks do not move instances into it
+- CI runs ruff, pytest (moto for EC2, IAM, and S3), `terraform fmt`, `terraform validate`, tflint, and checkov. CI does not apply and does not need AWS credentials
 
-**Tech Stack:** `Python` `REST APIs` `Async I/O` `Caching`
+**Tech:** `Terraform` `GuardDuty` `EventBridge` `Step Functions` `Lambda` `Python` `SNS` `checkov`
+
+---
+
+#### 🤖 [AutoSOC — local incident console](https://github.com/lloredia/AutoSOC)
+
+Node.js API and React console. NexusWatch detection was merged into this repository. The demo loads sample HoneyTrap-style events and a local indicator JSON file, scores them, and walks matching playbooks. Response steps in the demo are mock actions. Sample alerts are enough to run the UI. A live HoneyTrap or SentinelForge service is not required.
+
+**What the code does**
+- Six playbooks: brute force, malware containment, data exfiltration, command-and-control, phishing, and privilege escalation. Phishing stays disabled until an analyst enables it
+- Incident controls: pause, resume, abort, retry, escalate
+- Optional Python bridge tails a HoneyTrap JSONL spool into `POST /api/events`
+- State is in memory. `npm run dev` serves the UI on port 8080 and the API on port 8787
+
+**Tech:** `Node.js` `React` `JavaScript` `Vite`
+
+---
+
+#### 📚 [devops — teaching modules](https://github.com/lloredia/devops)
+
+Numbered learning modules, from the shell through Git, Python, Ansible, containers, a Kubernetes client note, Jenkins, platform-service notes, a cloud outline, security reading, and a short assembly intro (`01` through `11`). Examples are historical and often pin old packages. `archive/` is kept and is not coursework. GitHub Actions runs ShellCheck, Ruff, yamllint, and ansible-lint as a report-only job.
+
+**Tech:** `bash` `Python` `Ansible` `Docker` `Jenkins notes`
+
+---
+
+#### 💬 [tse-langgraph-demo](https://github.com/lloredia/tse-langgraph-demo)
+
+A small LangGraph support workflow. A question is classified, then either drafted as a reply or escalated when severity is high. With no `OPENAI_API_KEY`, `TSE_LLM_MODE=auto` uses a deterministic mock model, which is what CI uses. OpenAI and LangSmith tracing are optional.
+
+**Tech:** `Python` `LangGraph` `LangSmith`
+
+---
+
+#### 📦 [Package sorting function](https://github.com/lloredia/Thoughtful-Automation-Package-Sorting-Function)
+
+Pure Python `sort(width, height, length, mass)` for a robotic-arm dispatch exercise. Dimensions are centimeters. Mass is kilograms.
+
+| Bulky | Heavy | Stack |
+| --- | --- | --- |
+| No | No | `STANDARD` |
+| Yes | No | `SPECIAL` |
+| No | Yes | `SPECIAL` |
+| Yes | Yes | `REJECTED` |
+
+Bulky means volume is at least 1,000,000 cm³ or any side is at least 150 cm. Heavy means mass is at least 20 kg. Invalid measurements raise. pytest coverage fails under 100% (`--cov-fail-under=100`).
+
+**Tech:** `Python` `pytest`
+
+---
+
+#### 🌃 [Night List](https://github.com/lloredia/night-list)
+
+Nightlife table-booking portfolio. The React owner dashboard renders sample reservations, a floor-plan builder, and charts. The SwiftUI app shows in-memory mock venues. Supabase migrations, booking RPCs, and a Stripe webhook are in the repo. The dashboard pages do not call them. Nothing in this repo is deployed.
+
+**Tech:** `React` `TypeScript` `Vite` `SwiftUI` `Supabase` `Stripe webhook`
+
+---
+
+#### ⚔️ [Gods Of The Realms — War of Worlds](https://github.com/lloredia/Gods-Of-The-Realms-War-of-Worlds)
+
+Browser gacha RPG: Next.js 16 and React 19, with a JavaScript combat engine (turn meter, elements, relics, seeded RNG) and `localStorage` saves. Play it at [lloredia.github.io/Gods-Of-The-Realms-War-of-Worlds](https://lloredia.github.io/Gods-Of-The-Realms-War-of-Worlds/). GitHub Pages builds with `output: 'export'` and the repository base path.
+
+**Tech:** `Next.js 16` `React 19` `JavaScript` `GitHub Pages`
 
 ---
 
 ### 📈 Experience Highlights
 
-- 💡 Deployed production-grade microservices architectures on AWS with full IaC
-- 🔒 Implemented security compliance frameworks improving security posture by 40%+
-- ⚡ Automated infrastructure provisioning, reducing deployment time by 60%
-- 📊 Built CI/CD pipelines for multi-environment promotion with security gates
-- 🛡️ Engineered network security with VPCs, security groups, NACLs, and least-privilege IAM
-- 🧠 Built threat-intel and honeypot platforms in Rust for SOC workflows
+- AWS microservices lab: Terraform, Ansible, 12 EC2 instances, private DNS, SSM SecureString, and Ansible Vault
+- CIS-oriented Terraform modules with fmt, validate, tflint, checkov, and OPA/conftest in CI
+- Serverless health-check pipeline: HTTP API, Lambda, DynamoDB, GitHub OIDC, staging and production environments
+- Rust services for indicator storage, an SSH honeypot stack, and a gRPC checkpoint runtime on S3-compatible storage
+- GuardDuty to EventBridge to Step Functions lab that can quarantine an instance, snapshot volumes, and notify
+- Local incident console with detection and playbooks in one Node.js and React app
 
 ---
 
 ### 🌱 Currently Learning
 
-- Advanced Kubernetes orchestration (CKA preparation)
-- Service mesh architectures (Istio, Linkerd)
-- GitOps with ArgoCD & Flux
-- Cloud-native security (eBPF, runtime protection, policy-as-code with OPA)
+- Kubernetes administration
+- Service mesh (Istio, Linkerd)
+- GitOps with Argo CD and Flux
+- Runtime security and policy-as-code
+
+The certifications marked **In progress** above are the exam track.
 
 ---
 
 ### 💬 Ask Me About
 
-- AWS / Azure / GCP infrastructure design and best practices
-- Infrastructure as Code with Terraform & Ansible
-- CI/CD pipeline optimization & security gating
-- Microservices architecture & service discovery
-- SIEM tuning, detection engineering, and incident response
-- Compliance automation (CIS, NIST 800-53, SOC 2, HIPAA)
+- AWS infrastructure with Terraform and Ansible
+- CI that blocks on fmt, lint, tests, and policy
+- Service layout, private DNS, and security groups
+- Honeypot logs, indicator storage, and incident playbooks
+- CIS-style AWS controls and a NIST SP 800-61 lab mapping
 
 ---
 
@@ -728,11 +606,10 @@ flowchart LR
 ### 🤝 Let's Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amadin-o-8b1143192/)
-[![Email](https://img.shields.io/badge/Email-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
 
 ---
 
-*"Building scalable systems that power business growth."*
+*"Infrastructure, detection, and response, written so it can be reviewed."*
 
 ```text
 $ exit
@@ -742,10 +619,6 @@ Connection to lloredia closed.
 
 <!--
    ╔══════════════════════════════════════════════╗
-   ║  ↑ ↑ ↓ ↓ ← → ← → B A                         ║
-   ║  if you're reading the source, you found me. ║
-   ║  curl -sSL https://github.com/lloredia | sh  ║
+   ║  profile: https://github.com/lloredia       ║
    ╚══════════════════════════════════════════════╝
 -->
-
-![Profile Views](https://komarev.com/ghpvc/?username=lloredia&color=blueviolet&style=flat-square)
